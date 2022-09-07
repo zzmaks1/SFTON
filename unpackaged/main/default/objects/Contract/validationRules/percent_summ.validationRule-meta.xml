@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>percent_summ</fullName>
+    <active>true</active>
+    <errorConditionFormula>(PostPayment__c  +  Prepayment__c  +  Partpayment__c)  &lt;&gt; 1</errorConditionFormula>
+    <errorDisplayField>PostPayment__c</errorDisplayField>
+    <errorMessage>Сумма процентов оплаты должна составлять 100%</errorMessage>
+</ValidationRule>

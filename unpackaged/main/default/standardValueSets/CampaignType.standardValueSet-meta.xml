@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Объявление</fullName>
+        <default>true</default>
+        <label>Объявление</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Эл. почта</fullName>
+        <default>false</default>
+        <label>Эл. почта</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Телемаркетинг</fullName>
+        <default>false</default>
+        <label>Телемаркетинг</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Баннерная реклама</fullName>
+        <default>false</default>
+        <label>Баннерная реклама</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Семинар/конференция</fullName>
+        <default>false</default>
+        <label>Семинар/конференция</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Связи с общественностью</fullName>
+        <default>false</default>
+        <label>Связи с общественностью</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Партнеры</fullName>
+        <default>false</default>
+        <label>Партнеры</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Программа рекомендаций</fullName>
+        <default>false</default>
+        <label>Программа рекомендаций</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Другое</fullName>
+        <default>false</default>
+        <label>Другое</label>
+    </standardValue>
+</StandardValueSet>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>O2ProductLayout</layout>
+        <sections>
+            <label><!-- Настраиваемые ссылки --></label>
+            <section>Настраиваемые ссылки</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Opportunity Product Layout</layout>
+        <sections>
+            <label><!-- Настраиваемые ссылки --></label>
+            <section>Настраиваемые ссылки</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>ServiceProductLayout</layout>
+        <sections>
+            <label><!-- Настраиваемые ссылки --></label>
+            <section>Настраиваемые ссылки</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Поля &quot;Компоновка секций&quot;, &quot;Наружное исполнение&quot;, &quot;Сторона&quot;, &quot;Модули рециркуляции&quot; недопустимы при выборе данного продукта --></errorMessage>
+        <name>A150_A310_validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Недопустимая компоновка секций для данного продукта. Вы можете выбрать следующию компоновки: &quot;-H3V4&quot;, &quot;-H4V3&quot; --></errorMessage>
+        <name>B1000_X11000_FilterSection_validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Недопустимая компоновка секций для данного продукта. Вы можете выбрать следующию компоновки: &quot;-H3V4&quot;, &quot;-H4V3&quot; --></errorMessage>
+        <name>B1000_X12000_FilterSection_validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Недопустимая компоновка секций для данного продукта. Вы можете выбрать следующию компоновки: &quot;-H3V5&quot;, &quot;-H4V4&quot;, &quot;-H5V3&quot; --></errorMessage>
+        <name>B1000_X13000_FilterSection_validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Недопустимая компоновка секций для данного продукта. Вы можете выбрать следующию компоновки: &quot;-H3V5&quot;, &quot;-H4V4&quot;, &quot;-H5V3&quot; --></errorMessage>
+        <name>B1000_X14000_FilterSection_validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Недопустимая компоновка секций для данного продукта. Вы можете выбрать следующию компоновки: &quot;-H3V5&quot;, &quot;-H4V4&quot;, &quot;-H5V3&quot; --></errorMessage>
+        <name>B1000_X15000_FilterSection_validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Недопустимая компоновка секций для данного продукта. Вы можете выбрать следующию компоновки: &quot;-H4V4&quot; --></errorMessage>
+        <name>B1000_X16000_FilterSection_validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Недопустимая компоновка секций для данного продукта. Вы можете выбрать следующию компоновки: &quot;-H4V5&quot;, &quot;-H5V4&quot; --></errorMessage>
+        <name>B1000_X20000_FilterSection_validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Недопустимая компоновка секций для данного продукта. Вы можете выбрать следующию компоновки: &quot;-H1V2&quot; --></errorMessage>
+        <name>B1000_X2000_FilterSection_validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Недопустимая компоновка секций для данного продукта. Вы можете выбрать следующию компоновки: &quot;-H5V5&quot; --></errorMessage>
+        <name>B1000_X24000_FilterSection_validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Недопустимая компоновка секций для данного продукта. Вы можете выбрать следующию компоновки: &quot;-H5V5&quot; --></errorMessage>
+        <name>B1000_X25000_FilterSection_validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Недопустимая компоновка секций для данного продукта. Вы можете выбрать следующию компоновки: &quot;-H1V3&quot;, &quot;-H2V2&quot; --></errorMessage>
+        <name>B1000_X3000_FilterSection_validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Недопустимая компоновка секций для данного продукта. Вы можете выбрать следующию компоновки: &quot;-H1V4&quot;, &quot;-H2V2&quot; --></errorMessage>
+        <name>B1000_X4000_FilterSection_validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Недопустимая компоновка секций для данного продукта. Вы можете выбрать следующию компоновки: &quot;-H2V3&quot;, &quot;-H3V2&quot; --></errorMessage>
+        <name>B1000_X5000_FilterSection_validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Недопустимая компоновка секций для данного продукта. Вы можете выбрать следующию компоновки: &quot;-H2V3&quot;, &quot;-H3V2&quot; --></errorMessage>
+        <name>B1000_X6000_FilterSection_validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Недопустимая компоновка секций для данного продукта. Вы можете выбрать следующию компоновки: &quot;-H2V4&quot;, &quot;-H3V3&quot;, &quot;-H4V2&quot; --></errorMessage>
+        <name>B1000_X7000_FilterSection_validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Недопустимая компоновка секций для данного продукта. Вы можете выбрать следующию компоновки: &quot;-H2V4&quot;, &quot;-H3V3&quot;, &quot;-H4V2&quot; --></errorMessage>
+        <name>B1000_X8000_FilterSection_validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Недопустимая компоновка секций для данного продукта. Вы можете выбрать следующию компоновки: &quot;-H2V5&quot;, &quot;-H3V3&quot;, &quot;-H5V2&quot; --></errorMessage>
+        <name>B1000_X9000_FilterSection_validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Поле &quot;Модули рециркуляции&quot; недопустимо при выборе данного продукта --></errorMessage>
+        <name>B1000_validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Поля &quot;Компоновка секций&quot;, &quot;Сторона&quot;, &quot;Модули рециркуляции&quot; недопустимы при выборе данного продукта --></errorMessage>
+        <name>B150T_B1000T_validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Недопустимая компоновка секций для данного продукта. Вы можете выбрать следующию компоновки: &quot;-H2V4&quot;, &quot;-H3V3&quot;, &quot;-H4V2&quot; --></errorMessage>
+        <name>B150_X1050_FilterSection_validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Недопустимая компоновка секций для данного продукта. Вы можете выбрать следующию компоновки: &quot;-H2V4&quot;, &quot;-H3V3&quot;, &quot;-H4V2&quot; --></errorMessage>
+        <name>B150_X1200_FilterSection_validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Недопустимая компоновка секций для данного продукта. Вы можете выбрать следующию компоновки: &quot;-H2V5&quot;, &quot;-H3V3&quot;, &quot;-H5V2&quot; --></errorMessage>
+        <name>B150_X1350_FilterSection_validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Недопустимая компоновка секций для данного продукта. Вы можете выбрать следующию компоновки: &quot;-H2V5&quot;, &quot;-H3V4&quot;, &quot;-H4V3&quot;, &quot;-H5V2&quot; --></errorMessage>
+        <name>B150_X1500_FilterSection_validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Недопустимая компоновка секций для данного продукта. Вы можете выбрать следующию компоновки: &quot;-H3V4&quot;, &quot;-H4V3&quot; --></errorMessage>
+        <name>B150_X1650_FilterSection_validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Недопустимая компоновка секций для данного продукта. Вы можете выбрать следующию компоновки: &quot;-H3V4&quot;, &quot;-H4V3&quot; --></errorMessage>
+        <name>B150_X1800_FilterSection_validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Недопустимая компоновка секций для данного продукта. Вы можете выбрать следующию компоновки: &quot;-H3V5&quot;, &quot;-H4V4&quot;, &quot;-H5V3&quot; --></errorMessage>
+        <name>B150_X1950_FilterSection_validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Недопустимая компоновка секций для данного продукта. Вы можете выбрать следующию компоновки: &quot;-H3V5&quot;, &quot;-H4V4&quot;, &quot;-H5V3&quot; --></errorMessage>
+        <name>B150_X2100_FilterSection_validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Недопустимая компоновка секций для данного продукта. Вы можете выбрать следующию компоновки: &quot;-H3V5&quot;, &quot;-H4V4&quot;, &quot;-H5V3&quot; --></errorMessage>
+        <name>B150_X2250_FilterSection_validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Недопустимая компоновка секций для данного продукта. Вы можете выбрать следующию компоновки: &quot;-H4V4&quot; --></errorMessage>
+        <name>B150_X2400_FilterSection_validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Недопустимая компоновка секций для данного продукта. Вы можете выбрать следующию компоновки: &quot;-H1V2&quot; --></errorMessage>
+        <name>B150_X300_FilterSection_validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Недопустимая компоновка секций для данного продукта. Вы можете выбрать следующию компоновки: &quot;-H1V3&quot;, &quot;-H2V2&quot; --></errorMessage>
+        <name>B150_X450_FilterSection_validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Недопустимая компоновка секций для данного продукта. Вы можете выбрать следующию компоновки: &quot;-H1V4&quot;, &quot;-H2V2&quot; --></errorMessage>
+        <name>B150_X600_FilterSection_validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Недопустимая компоновка секций для данного продукта. Вы можете выбрать следующию компоновки: &quot;-H2V3&quot;, &quot;-H3V2&quot; --></errorMessage>
+        <name>B150_X750_FilterSection_validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Недопустимая компоновка секций для данного продукта. Вы можете выбрать следующию компоновки: &quot;-H2V3&quot;, &quot;-H3V2&quot; --></errorMessage>
+        <name>B150_X900_FilterSection_validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Поле &quot;Модули рециркуляции&quot; недопустимо при выборе данного продукта --></errorMessage>
+        <name>B150_validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Данный продукт содержит модули рециркуляции по умолчанию. Для устранения ошибке в выпадающем списке &quot;Модули рециркуляции&quot; выберите значение &quot;- -  Нет - - &quot; --></errorMessage>
+        <name>B_Lam_R_validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Поля &quot;Компоновка секций&quot;, &quot;Наружное исполнение&quot;, &quot;Сторона&quot; недопустимы при выборе данного продукта --></errorMessage>
+        <name>B_Lam_validation</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Дополнительные телефоны --></help>
+        <label><!-- Дополнительные телефоны --></label>
+        <name>add_phones__c</name>
+    </CustomFieldTranslation>

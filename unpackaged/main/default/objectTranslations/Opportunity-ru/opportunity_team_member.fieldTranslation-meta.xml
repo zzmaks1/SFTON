@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <caseValues>
+            <caseType>Dative</caseType>
+            <plural>false</plural>
+            <value>Участнику группы, работающей с проектами (сделками)</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Dative</caseType>
+            <plural>true</plural>
+            <value>Участникам группы, работающей с проектами (сделками)</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Genitive</caseType>
+            <plural>false</plural>
+            <value>Участника группы, работающей с проектами (сделками)</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Genitive</caseType>
+            <plural>true</plural>
+            <value>Участников группы, работающей с проектами (сделками)</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Instrumental</caseType>
+            <plural>false</plural>
+            <value>Участником группы, работающей с проектами (сделками)</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Instrumental</caseType>
+            <plural>true</plural>
+            <value>Участниками группы, работающей с проектами (сделками)</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Участник группы, работающей с проектами (сделками)</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Участники группы, работающей с проектами (сделками)</value>
+        </caseValues>
+        <gender>Masculine</gender>
+        <name>opportunity_team_member</name>
+    </CustomFieldTranslation>

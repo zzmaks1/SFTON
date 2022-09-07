@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DeliveryPay__c</fullName>
+    <externalId>false</externalId>
+    <label>Оплата доставки</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Нет</fullName>
+                <default>true</default>
+                <label>Нет</label>
+            </value>
+            <value>
+                <fullName>За счет Покупателя. Покупатель оплачивает счет от транспортной компании</fullName>
+                <default>false</default>
+                <label>За счет Покупателя. Покупатель оплачивает счет от транспортной компании</label>
+            </value>
+            <value>
+                <fullName>Самовывоз в течение 5 дней после уведомления</fullName>
+                <default>false</default>
+                <label>Самовывоз в течение 5 дней после уведомления</label>
+            </value>
+            <value>
+                <fullName>Поставщик доставляет своими силами. Стоимость доставки входит в стоимость оборудования</fullName>
+                <default>false</default>
+                <label>Поставщик доставляет своими силами. Стоимость доставки входит в стоимость оборудования</label>
+            </value>
+            <value>
+                <fullName>За счет Покупателя. Покупатель оплачивает счет от Тион</fullName>
+                <default>false</default>
+                <label>За счет Покупателя. Покупатель оплачивает счет от Тион</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

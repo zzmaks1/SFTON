@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Сотрудник, ответственный за действие --></label>
+        <name>TionOwner__c</name>
+        <picklistValues>
+            <masterLabel>Алексей Мирошин</masterLabel>
+            <translation><!-- Алексей Мирошин --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Андрей Дюдюев</masterLabel>
+            <translation><!-- Андрей Дюдюев --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Андрей Капкин</masterLabel>
+            <translation><!-- Андрей Капкин --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Антон Чариков</masterLabel>
+            <translation><!-- Антон Чариков --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Вадим Семенихин</masterLabel>
+            <translation><!-- Вадим Семенихин --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Виктория Пяк</masterLabel>
+            <translation><!-- Виктория Пяк --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Владимир Алексеев</masterLabel>
+            <translation><!-- Владимир Алексеев --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Владимир Шматков</masterLabel>
+            <translation><!-- Владимир Шматков --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Денис Вакал</masterLabel>
+            <translation><!-- Денис Вакал --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Дмитрий Пронкин</masterLabel>
+            <translation><!-- Дмитрий Пронкин --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Евгений Гребенюк</masterLabel>
+            <translation><!-- Евгений Гребенюк --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Евгений Сафронов</masterLabel>
+            <translation><!-- Евгений Сафронов --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Екатерина Горшенина</masterLabel>
+            <translation><!-- Екатерина Горшенина --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Екатерина Широкова</masterLabel>
+            <translation><!-- Екатерина Широкова --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Иван Кущенко</masterLabel>
+            <translation><!-- Иван Кущенко --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Кирилл Бабич</masterLabel>
+            <translation><!-- Кирилл Бабич --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Константин Парахин</masterLabel>
+            <translation><!-- Константин Парахин --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Михаил Данилов</masterLabel>
+            <translation><!-- Михаил Данилов --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Наталия Литвин</masterLabel>
+            <translation><!-- Наталия Литвин --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Наталья Натфуллина</masterLabel>
+            <translation><!-- Наталья Натфуллина --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Николай Бурячковский</masterLabel>
+            <translation><!-- Николай Бурячковский --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Павел Гордеев</masterLabel>
+            <translation><!-- Павел Гордеев --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Павел Погожев</masterLabel>
+            <translation><!-- Павел Погожев --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Роман Борисов</masterLabel>
+            <translation><!-- Роман Борисов --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Сергей Димитриев</masterLabel>
+            <translation><!-- Сергей Димитриев --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Сергей Куйдин</masterLabel>
+            <translation><!-- Сергей Куйдин --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

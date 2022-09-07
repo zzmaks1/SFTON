@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Например, &quot;Общество с ограниченной ответственностью «Бегемот»&quot; --></help>
+        <label><!-- Юридическое имя контрагента (полностью) --></label>
+        <name>AccountBillingName__c</name>
+    </CustomFieldTranslation>

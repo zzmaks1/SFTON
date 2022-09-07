@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Готовность к отгрузке со склада --></label>
+        <name>InvoiceReadyInfo__c</name>
+        <picklistValues>
+            <masterLabel>Поставщика</masterLabel>
+            <translation><!-- Поставщика --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Производителя</masterLabel>
+            <translation><!-- Производителя --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

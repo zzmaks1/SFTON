@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Г-н</fullName>
+        <default>false</default>
+        <label>Г-н</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Г-жа</fullName>
+        <default>false</default>
+        <label>Г-жа</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Mrs.</fullName>
+        <default>false</default>
+        <label>Mrs.</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Dr.</fullName>
+        <default>false</default>
+        <label>Dr.</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Проф.</fullName>
+        <default>false</default>
+        <label>Проф.</label>
+    </standardValue>
+</StandardValueSet>

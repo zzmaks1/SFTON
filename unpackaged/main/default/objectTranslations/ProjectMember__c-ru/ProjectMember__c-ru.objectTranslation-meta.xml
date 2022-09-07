@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Контрагент</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Контрагенты</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Контрагента</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Контрагентов</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Контрагента</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Контрагентов</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Контрагенту</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Контрагентам</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value>Контрагентом</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value>Контрагентами</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Prepositional</caseType>
+        <plural>false</plural>
+        <value>Контрагенте</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Prepositional</caseType>
+        <plural>true</plural>
+        <value>Контрагентах</value>
+    </caseValues>
+    
+    
+    
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Макет Участник проекта</layout>
+        <sections>
+            <label><!-- Настраиваемые ссылки --></label>
+            <section>Настраиваемые ссылки</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Код контрагента</nameFieldLabel>
+    <webLinks>
+        <label><!-- AddProjectMember --></label>
+        <name>AddProjectMember</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- AddProjectMemberButton --></label>
+        <name>AddProjectMemberButton</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPageWebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <availability>online</availability>
+    <displayType>link</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Отправить!</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/25.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/25.0/apex.js&quot;)}
+var isConfirmed = confirm(&quot;Вы уверены, что хотите отправить отчет?&quot;);
+if(isConfirmed){
+sforce.apex.execute(&quot;DailyReportSender&quot;,&quot;sendReport&quot;, {userId:&quot;{!$User.Id}&quot;});
+}</url>
+</CustomPageWebLink>

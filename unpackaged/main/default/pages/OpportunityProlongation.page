@@ -1,0 +1,14 @@
+<apex:page showHeader="true" standardController="Opportunity" extensions="OpportunityProlongationController" tabStyle="Opportunity">
+    <apex:sectionHeader title="Продлить этап" />
+
+    <apex:variable var="opp_stageName" value="{!Opportunity.stageName}" />
+    <apex:variable var="opp_LastStageUpdated" value="{!Opportunity.LastStageUpdated__c}" />  
+    <apex:variable var="opp_needProlongation" value="{!Opportunity.needProlongation__c}" />   
+    <apex:variable var="opp_needProlongationText" value="{!Opportunity.needProlongationText__c}" />   
+    <apex:variable var="opp_HiddenStageNameBeforeApprovalStarts" value="{!Opportunity.HiddenStageNameBeforeApprovalStarts__c}" />   
+    
+    
+    <apex:form >        
+        <apex:dynamicComponent componentValue="{!ShowLong}"/>
+    </apex:form>
+</apex:page>

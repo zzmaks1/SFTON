@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OppSpec</fullName>
+    <active>false</active>
+    <errorConditionFormula>Contract__r.ProjectName__r.Id !=  Opportunity__r.Id</errorConditionFormula>
+    <errorDisplayField>Opportunity__c</errorDisplayField>
+    <errorMessage>Проект не соответствует выбранному договору</errorMessage>
+</ValidationRule>

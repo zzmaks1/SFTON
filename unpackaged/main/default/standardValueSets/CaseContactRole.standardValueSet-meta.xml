@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Технический контакт</fullName>
+        <default>false</default>
+        <label>Технический контакт</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Деловой контакт</fullName>
+        <default>false</default>
+        <label>Деловой контакт</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Сотрудник, принимающий решения</fullName>
+        <default>false</default>
+        <label>Сотрудник, принимающий решения</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Другое</fullName>
+        <default>false</default>
+        <label>Другое</label>
+    </standardValue>
+</StandardValueSet>

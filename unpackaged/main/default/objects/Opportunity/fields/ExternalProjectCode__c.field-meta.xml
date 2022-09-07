@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ExternalProjectCode__c</fullName>
+    <displayFormat>N{0000}</displayFormat>
+    <externalId>false</externalId>
+    <label>Внешний код проекта</label>
+    <trackTrending>false</trackTrending>
+    <type>AutoNumber</type>
+</CustomField>

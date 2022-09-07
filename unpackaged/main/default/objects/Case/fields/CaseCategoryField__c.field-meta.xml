@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CaseCategoryField__c</fullName>
+    <externalId>false</externalId>
+    <label>Категория обращения</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Не включается</fullName>
+                <default>false</default>
+                <label>Не включается</label>
+            </value>
+            <value>
+                <fullName>Горит «сервис 1»</fullName>
+                <default>false</default>
+                <label>Горит «сервис 1»</label>
+            </value>
+            <value>
+                <fullName>Горит «сервис 2»</fullName>
+                <default>false</default>
+                <label>Горит «сервис 2»</label>
+            </value>
+            <value>
+                <fullName>Горит «давление»</fullName>
+                <default>false</default>
+                <label>Горит «давление»</label>
+            </value>
+            <value>
+                <fullName>При работе прибора есть неприятный запах</fullName>
+                <default>false</default>
+                <label>При работе прибора есть неприятный запах</label>
+            </value>
+            <value>
+                <fullName>Неисправен вентилятор</fullName>
+                <default>false</default>
+                <label>Неисправен вентилятор</label>
+            </value>
+            <value>
+                <fullName>Неисправен ИВН</fullName>
+                <default>false</default>
+                <label>Неисправен ИВН</label>
+            </value>
+            <value>
+                <fullName>Неисправна плата индикации</fullName>
+                <default>false</default>
+                <label>Неисправна плата индикации</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>10</visibleLines>
+</CustomField>

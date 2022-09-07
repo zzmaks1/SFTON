@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>HiddenAccountSearchRegionUpdate</fullName>
+        <field>HiddenRegionFieldForSearch__c</field>
+        <formula>TEXT(ShippingRegion__c)</formula>
+        <name>Обновление региона организации для поиск</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>AutoUpdateAccountHiddenSearchRegion</fullName>
+        <actions>
+            <name>HiddenAccountSearchRegionUpdate</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>NOT ISPICKVAL( ShippingRegion__c , &quot;&quot;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

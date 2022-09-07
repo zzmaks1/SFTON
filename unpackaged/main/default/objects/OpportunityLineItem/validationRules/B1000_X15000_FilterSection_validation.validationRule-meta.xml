@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>B1000_X15000_FilterSection_validation</fullName>
+    <active>false</active>
+    <errorConditionFormula>ISPICKVAL(Product2.Family,&#39;В1000&#39;) &amp;&amp; CONTAINS(Product2.Name, &#39;X15000&#39;) &amp;&amp; NOT(ISPICKVAL(  FilterSectionComposition__c , &#39;-H3V5&#39;) || ISPICKVAL(  FilterSectionComposition__c , &#39;-H4V4&#39;) || ISPICKVAL(  FilterSectionComposition__c , &#39;-H5V3&#39;))</errorConditionFormula>
+    <errorMessage>Недопустимая компоновка секций для данного продукта. Вы можете выбрать следующию компоновки: &quot;-H3V5&quot;, &quot;-H4V4&quot;, &quot;-H5V3&quot;</errorMessage>
+</ValidationRule>

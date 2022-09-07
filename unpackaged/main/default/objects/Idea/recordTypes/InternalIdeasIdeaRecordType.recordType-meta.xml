@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>InternalIdeasIdeaRecordType</fullName>
+    <active>true</active>
+    <description>Record Type used to associate ideas with a specific community</description>
+    <label>Сообщество Тион: Idea тип записи</label>
+    <picklistValues>
+        <picklist>Categories</picklist>
+        <values>
+            <fullName>Оборудование</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Общие вопросы</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Предложения по CRM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Схемы продаж</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

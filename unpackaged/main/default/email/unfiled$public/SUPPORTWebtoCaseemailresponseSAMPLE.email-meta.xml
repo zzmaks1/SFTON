@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Автоматический ответ для нового обращения, переданного через Интернет.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>ПОДДЕРЖКА:  ответ по эл. почте функции отправки обращений через Интернет (ОБРАЗЕ</name>
+    <style>none</style>
+    <subject>Номер обращения {!Case.CaseNumber} {!Organization.Name}:  {!Case.Subject}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

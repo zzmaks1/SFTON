@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Монтажник</fullName>
+        <default>false</default>
+        <label>Монтажник</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Проектировщик</fullName>
+        <default>false</default>
+        <label>Проектировщик</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Проектно-монтажная организация</fullName>
+        <default>false</default>
+        <label>Проектно-монтажная организация</label>
+    </standardValue>
+    <standardValue>
+        <fullName>ЛПУ</fullName>
+        <default>false</default>
+        <label>ЛПУ</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Служба эксплуатации</fullName>
+        <default>false</default>
+        <label>Служба эксплуатации</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Заказчик</fullName>
+        <default>false</default>
+        <label>Заказчик</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Инвестор</fullName>
+        <default>false</default>
+        <label>Инвестор</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Поставщик</fullName>
+        <default>false</default>
+        <label>Поставщик</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Потенциальный дилер</fullName>
+        <default>false</default>
+        <label>Потенциальный дилер</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Дилер</fullName>
+        <default>false</default>
+        <label>Дилер</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Сети</fullName>
+        <default>false</default>
+        <label>Сети</label>
+    </standardValue>
+</StandardValueSet>

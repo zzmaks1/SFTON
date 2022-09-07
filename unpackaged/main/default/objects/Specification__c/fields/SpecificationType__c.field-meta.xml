@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SpecificationType__c</fullName>
+    <externalId>false</externalId>
+    <label>Тип спецификации</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Проектное решение</fullName>
+                <default>false</default>
+                <label>Проектное решение</label>
+            </value>
+            <value>
+                <fullName>Медоборудование</fullName>
+                <default>false</default>
+                <label>Медоборудование</label>
+            </value>
+            <value>
+                <fullName>Экспорт</fullName>
+                <default>false</default>
+                <label>Экспорт</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

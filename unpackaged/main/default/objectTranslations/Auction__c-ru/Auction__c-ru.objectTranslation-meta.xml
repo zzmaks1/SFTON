@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Конкурс</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Конкурсы</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Конкурс: макет</layout>
+        <sections>
+            <label><!-- Настраиваемые ссылки --></label>
+            <section>Настраиваемые ссылки</section>
+        </sections>
+    </layouts>
+    <webLinks>
+        <label><!-- ConvertAuctionToProjectLink --></label>
+        <name>ConvertAuctionToProjectLink</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- MarkAsMisdirected --></label>
+        <name>MarkAsMisdirected</name>
+    </webLinks>
+</CustomObjectTranslation>

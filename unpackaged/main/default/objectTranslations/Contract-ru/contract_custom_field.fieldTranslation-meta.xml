@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Настраиваемое поле договора</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Настраиваемые поля договора</value>
+        </caseValues>
+        <gender>Neuter</gender>
+        <name>contract_custom_field</name>
+    </CustomFieldTranslation>

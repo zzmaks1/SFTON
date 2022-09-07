@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Спецификация</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Спецификации</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Спецификация: макет</layout>
+        <sections>
+            <label><!-- Настраиваемые ссылки --></label>
+            <section>Настраиваемые ссылки</section>
+        </sections>
+        <sections>
+            <label><!-- Оплата --></label>
+            <section>Оплата</section>
+        </sections>
+        <sections>
+            <label><!-- Сведения о доставке --></label>
+            <section>Сведения о доставке</section>
+        </sections>
+        <sections>
+            <label><!-- Сведения о спецификации --></label>
+            <section>Сведения о спецификации</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Проект не соответствует выбранному договору --></errorMessage>
+        <name>OppSpec</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Укажите срок --></errorMessage>
+        <name>Partpayment_days</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Укажите срок --></errorMessage>
+        <name>Postpayment_days</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Сумма процентов оплаты должна составлять 100% --></errorMessage>
+        <name>percent_summ</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Укажите срок --></errorMessage>
+        <name>prepayment_days</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- SpecificationPDF --></label>
+        <name>SpecificationPDF</name>
+    </webLinks>
+</CustomObjectTranslation>

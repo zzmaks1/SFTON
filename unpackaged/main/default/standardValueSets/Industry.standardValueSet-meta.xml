@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Сельское хозяйство</fullName>
+        <default>false</default>
+        <label>Сельское хозяйство</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Биотехнологии</fullName>
+        <default>false</default>
+        <label>Биотехнологии</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Химия</fullName>
+        <default>false</default>
+        <label>Химия</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Строительство</fullName>
+        <default>false</default>
+        <label>Строительство</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Образование</fullName>
+        <default>false</default>
+        <label>Образование</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Электроника</fullName>
+        <default>false</default>
+        <label>Электроника</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Энергетика</fullName>
+        <default>false</default>
+        <label>Энергетика</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Проектирование</fullName>
+        <default>false</default>
+        <label>Проектирование</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Здравоохранение</fullName>
+        <default>false</default>
+        <label>Здравоохранение</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Гостинично-ресторанный бизнес</fullName>
+        <default>false</default>
+        <label>Гостинично-ресторанный бизнес</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Производство</fullName>
+        <default>false</default>
+        <label>Производство</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Другое</fullName>
+        <default>false</default>
+        <label>Другое</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Фармацевтика</fullName>
+        <default>false</default>
+        <label>Фармацевтика</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Здрав-2013</fullName>
+        <default>false</default>
+        <label>Здрав-2013</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Частная медицина Москва</fullName>
+        <default>false</default>
+        <label>Частная медицина Москва</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Дилер Интелмеда</fullName>
+        <default>false</default>
+        <label>Дилер Интелмеда</label>
+    </standardValue>
+</StandardValueSet>

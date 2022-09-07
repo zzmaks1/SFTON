@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AccountCEOAct__c</fullName>
+    <defaultValue>&quot;Устава&quot;</defaultValue>
+    <externalId>false</externalId>
+    <inlineHelpText>Например, &quot;Устава&quot;</inlineHelpText>
+    <label>Действующего на основании</label>
+    <length>64</length>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

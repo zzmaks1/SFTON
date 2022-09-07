@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MarkAsMisdirected</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Поместить в корзину</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!requireScript(&quot;/soap/ajax/26.0/connection.js&quot;)} //adds the proper code for inclusion of AJAX toolkit
+var url = parent.location.href; //string for the URL of the current page
+var result = sforce.connection.query(&quot;Select Id, AuctionStatus__c from Auction__c where Id=\&#39;&quot; + window.location.pathname.substring(1) + &quot;\&#39;&quot;);
+var auction = result.getArray(&quot;records&quot;)[0];
+var isNextStageConfirmed = false;
+if(auction.AuctionStatus__c == &#39;Не просмотрен&#39;){
+    auction.AuctionStatus__c = &#39;Не профиль&#39;;
+    isNextStageConfirmed = confirm(&quot;Вы уверены, что хотите отметить конкурс как не профиль? В этом случае запись станет недоступной для редактирования и попадет в корзину.&quot;);
+    auction.Comment__c = prompt(&#39;Укажите, пожалуйста, причину помещения конкурса в корзину&#39;,&#39;Не указана&#39;);
+    if(isNextStageConfirmed){
+        var response = sforce.connection.update(new Array(auction));
+        parent.location.href = url;
+    }
+}</url>
+</WebLink>

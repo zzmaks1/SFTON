@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MyNonviewedAuctionsView</fullName>
+    <columns>NAME</columns>
+    <columns>AuctionName__c</columns>
+    <columns>AuctionRegion__c</columns>
+    <columns>AuctionURLLink__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>AuctionStatus__c</field>
+        <operation>equals</operation>
+        <value>Не просмотрен</value>
+    </filters>
+    <label>Мои непросмотренные конкурсы</label>
+    <language>ru</language>
+</ListView>

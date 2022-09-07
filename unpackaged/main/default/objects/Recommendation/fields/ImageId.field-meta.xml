@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ImageId</fullName>
+    <inlineHelpText>Рекомендуем использовать изображение размером 1 000 х 380 пкс с разрешением 72 точки на дюйм или изображение с похожим соотношением.</inlineHelpText>
+    <type>Lookup</type>
+</CustomField>

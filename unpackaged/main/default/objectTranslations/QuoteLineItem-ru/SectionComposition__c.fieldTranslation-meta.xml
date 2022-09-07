@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Компоновка секций --></label>
+        <name>SectionComposition__c</name>
+        <picklistValues>
+            <masterLabel>-</masterLabel>
+            <translation><!-- - --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>-H1V2</masterLabel>
+            <translation><!-- -H1V2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>-H1V3</masterLabel>
+            <translation><!-- -H1V3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>-H1V4</masterLabel>
+            <translation><!-- -H1V4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>-H2V2</masterLabel>
+            <translation><!-- -H2V2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>-H2V3</masterLabel>
+            <translation><!-- -H2V3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>-H2V4</masterLabel>
+            <translation><!-- -H2V4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>-H2V5</masterLabel>
+            <translation><!-- -H2V5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>-H3V2</masterLabel>
+            <translation><!-- -H3V2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>-H3V3</masterLabel>
+            <translation><!-- -H3V3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>-H3V4</masterLabel>
+            <translation><!-- -H3V4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>-H3V5</masterLabel>
+            <translation><!-- -H3V5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>-H4V2</masterLabel>
+            <translation><!-- -H4V2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>-H4V3</masterLabel>
+            <translation><!-- -H4V3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>-H4V4</masterLabel>
+            <translation><!-- -H4V4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>-H5V2</masterLabel>
+            <translation><!-- -H5V2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>-H5V3</masterLabel>
+            <translation><!-- -H5V3 --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

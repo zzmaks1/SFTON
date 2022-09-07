@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Оборудование</fullName>
+        <default>false</default>
+        <label>Оборудование</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Схемы продаж</fullName>
+        <default>false</default>
+        <label>Схемы продаж</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Общие вопросы</fullName>
+        <default>false</default>
+        <label>Общие вопросы</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Предложения по CRM</fullName>
+        <default>false</default>
+        <label>Предложения по CRM</label>
+    </standardValue>
+</StandardValueSet>

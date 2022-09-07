@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Не запущено</fullName>
+        <default>true</default>
+        <label>Не запущено</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Выполняется</fullName>
+        <default>false</default>
+        <label>Выполняется</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Завершено</fullName>
+        <default>false</default>
+        <label>Завершено</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>В ожидании другого сотрудника</fullName>
+        <default>false</default>
+        <label>В ожидании другого сотрудника</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Отложено</fullName>
+        <default>false</default>
+        <label>Отложено</label>
+        <closed>false</closed>
+    </standardValue>
+</StandardValueSet>

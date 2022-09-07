@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Пользователь отсутствовал на занятиях</fullName>
+        <default>false</default>
+        <label>Пользователь отсутствовал на занятиях</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Комплексные функции</fullName>
+        <default>false</default>
+        <label>Комплексные функции</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Существующая проблема</fullName>
+        <default>false</default>
+        <label>Существующая проблема</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Инструкции не понятны</fullName>
+        <default>false</default>
+        <label>Инструкции не понятны</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Новая проблема</fullName>
+        <default>false</default>
+        <label>Новая проблема</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+</StandardValueSet>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <fieldSets>
+        <label><!-- CustomAccountLookup --></label>
+        <name>CustomAccountLookup</name>
+    </fieldSets>
+    <layouts>
+        <layout>Account Layout</layout>
+        <sections>
+            <label><!-- Банковские реквизиты --></label>
+            <section>Банковские реквизиты</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>DetailedAccountLayout</layout>
+        <sections>
+            <label><!-- Банковские реквизиты --></label>
+            <section>Банковские реквизиты</section>
+        </sections>
+        <sections>
+            <label><!-- Системные сведения --></label>
+            <section>Системные сведения</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>O2Layout</layout>
+        <sections>
+            <label><!-- Банковские реквизиты --></label>
+            <section>Банковские реквизиты</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>ServiceLayout</layout>
+        <sections>
+            <label><!-- Банковские реквизиты --></label>
+            <section>Банковские реквизиты</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- NewMove --></label>
+        <name>NewMove</name>
+    </quickActions>
+    <webLinks>
+        <label><!-- AltavistaNews --></label>
+        <name>AltavistaNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- HooversProfile --></label>
+        <name>HooversProfile</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+</CustomObjectTranslation>

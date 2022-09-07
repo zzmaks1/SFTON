@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contract_format</fullName>
+    <active>true</active>
+    <errorConditionFormula>! REGEX( ContractNumber__c , &#39;[T|Т]./[0-3][0-9][0-1][0-9]20[0-9][0-9]&#39;)</errorConditionFormula>
+    <errorDisplayField>ContractNumber__c</errorDisplayField>
+    <errorMessage>Номер должен соответствовать формату: &#39;Первая буква - название нашего юрлица, затем вторая буква (без пробелов) - первая буква названия юрлица контрагента, затем, без пробелов, слеш и дата подписания договора&#39;</errorMessage>
+</ValidationRule>

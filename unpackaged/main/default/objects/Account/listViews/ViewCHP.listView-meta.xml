@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ViewCHP</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>ShippingRegion__c</columns>
+    <columns>UserTION__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Field1__c</field>
+        <operation>equals</operation>
+        <value>Чистые помещения</value>
+    </filters>
+    <label>Организации ЧП</label>
+    <language>ru</language>
+</ListView>

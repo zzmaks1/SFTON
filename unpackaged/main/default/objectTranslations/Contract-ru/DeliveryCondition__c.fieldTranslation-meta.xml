@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Доставка --></label>
+        <name>DeliveryCondition__c</name>
+        <picklistValues>
+            <masterLabel>За счет Покупателя. Покупатель оплачивает счет от Тион</masterLabel>
+            <translation><!-- За счет Покупателя. Покупатель оплачивает счет от Тион --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>За счет Покупателя. Покупатель оплачивает счет от транспортной компании</masterLabel>
+            <translation><!-- За счет Покупателя. Покупатель оплачивает счет от транспортной компании --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Поставщик доставляет своими силами. Стоимость доставки входит в стоимость Оборудования</masterLabel>
+            <translation><!-- Поставщик доставляет своими силами. Стоимость доставки входит в стоимость Оборудования --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Поставщик обязуется доставить своими силами и средствами Оборудование до склада транспортной компании в городе</masterLabel>
+            <translation><!-- Поставщик обязуется доставить своими силами и средствами Оборудование до склада транспортной компании в городе --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Самовывоз в течение 5 дней после уведомления</masterLabel>
+            <translation><!-- Самовывоз в течение 5 дней после уведомления --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

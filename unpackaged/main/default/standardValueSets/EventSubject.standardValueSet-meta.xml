@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Холодный звонок</fullName>
+        <default>false</default>
+        <label>Холодный звонок</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Контроль контакта</fullName>
+        <default>false</default>
+        <label>Контроль контакта</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Презентация</fullName>
+        <default>false</default>
+        <label>Презентация</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Выставление КП</fullName>
+        <default>false</default>
+        <label>Выставление КП</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Консультация по технике</fullName>
+        <default>false</default>
+        <label>Консультация по технике</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Встреча</fullName>
+        <default>false</default>
+        <label>Встреча</label>
+    </standardValue>
+</StandardValueSet>

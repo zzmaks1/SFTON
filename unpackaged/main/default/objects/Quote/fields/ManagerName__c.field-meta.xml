@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ManagerName__c</fullName>
+    <externalId>false</externalId>
+    <label>ФИО Директора Тион</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Н.Л. Литвин_</fullName>
+                <default>true</default>
+                <label>Н.Л. Литвин ______________по Доверенности № 03 от 09.01.2019 г.</label>
+            </value>
+            <value>
+                <fullName>О.В. Колмакова</fullName>
+                <default>false</default>
+                <label>Колмакова О.В. ____________по Доверенности № 04 от 09.01.2019 г.</label>
+            </value>
+            <value>
+                <fullName>В.Ю. Павлов</fullName>
+                <default>false</default>
+                <label>по Доверенности № 24 от 23.01.2018 г    _____________В.Ю.Павлов</label>
+            </value>
+            <value>
+                <fullName>В.А. Фольц</fullName>
+                <default>false</default>
+                <label>В.А. Фольц на основании Доверенности №13 от 15 июня 2017 г.</label>
+            </value>
+            <value>
+                <fullName>М.А. Амелькин</fullName>
+                <default>false</default>
+                <label>М.А. Амелькин</label>
+            </value>
+            <value>
+                <fullName>М.Ю. Данилов</fullName>
+                <default>false</default>
+                <label>М.Ю. Данилов</label>
+            </value>
+            <value>
+                <fullName>Е.А. Гребенюк</fullName>
+                <default>false</default>
+                <label>Е.А. Гребенюк</label>
+            </value>
+            <value>
+                <fullName>Н.Л. Литвин</fullName>
+                <default>false</default>
+                <label>По Доверенности №89 от 28.08.2018 г.________________Н.Л. Литвин</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

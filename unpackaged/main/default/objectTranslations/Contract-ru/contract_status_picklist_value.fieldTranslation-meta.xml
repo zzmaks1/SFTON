@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Значение раскрывающегося списка статусов договора</value>
+        </caseValues>
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>true</plural>
+            <value>Значения раскрывающегося списка статусов договора</value>
+        </caseValues>
+        <gender>Neuter</gender>
+        <name>contract_status_picklist_value</name>
+    </CustomFieldTranslation>

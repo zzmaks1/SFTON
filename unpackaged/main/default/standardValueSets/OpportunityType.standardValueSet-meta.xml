@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Медицина</fullName>
+        <default>true</default>
+        <label>Медицина</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Детские сады, Школы</fullName>
+        <default>false</default>
+        <label>Детские сады, Школы</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Микробиологические лаборатории</fullName>
+        <default>false</default>
+        <label>Микробиологические лаборатории</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Виварии</fullName>
+        <default>false</default>
+        <label>Виварии</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Дома ребенка и детские дома</fullName>
+        <default>false</default>
+        <label>Дома ребенка и детские дома</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Архивы, библиотеки</fullName>
+        <default>false</default>
+        <label>Архивы, библиотеки</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Пищевка</fullName>
+        <default>false</default>
+        <label>Пищевка</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Очистные сооружения</fullName>
+        <default>false</default>
+        <label>Очистные сооружения</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Атомная промышленность</fullName>
+        <default>false</default>
+        <label>Атомная промышленность</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Прочее</fullName>
+        <default>false</default>
+        <label>Прочее</label>
+    </standardValue>
+</StandardValueSet>

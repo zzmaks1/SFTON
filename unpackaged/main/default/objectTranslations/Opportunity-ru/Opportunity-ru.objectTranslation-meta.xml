@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Проект (Сделка)</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Проекты (Сделки)</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Проект (Сделка)</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Проекты (Сделки)</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Проекта (Сделки)</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Проектов (Сделок)</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Проекту (Сделке)</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Проектам (Сделкам)</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value>Проектом (Сделкой)</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value>Проектами (Сделками)</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Prepositional</caseType>
+        <plural>false</plural>
+        <value>Проекте (Сделке)</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Prepositional</caseType>
+        <plural>true</plural>
+        <value>Проектах (Сделках)</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <fieldSets>
+        <label><!-- Поля для создания из поисковой формы --></label>
+        <name>CustomOpportunityLookupFields</name>
+    </fieldSets>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>DetailedProjectLayout</layout>
+        <sections>
+            <label><!-- Системные сведения --></label>
+            <section>Системные сведения</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Объект на монтаж --></label>
+        <name>BuildingStageProjectType</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Сделка --></label>
+        <name>DealProjectType</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Объект на проектирование --></label>
+        <name>DesignStageProjectType</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Продажа Тион О2 дилерам --></label>
+        <name>O2ProjectType</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Продажа услуг сервиса --></label>
+        <name>ServiceProjectType</name>
+    </recordTypes>
+    <webLinks>
+        <label><!-- ChangeProjectStageButton --></label>
+        <name>ChangeProjectStageButton</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CloseAsMisdirection --></label>
+        <name>CloseAsMisdirection</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CloseAsMisdirection2 --></label>
+        <name>CloseAsMisdirection2</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CloseOk --></label>
+        <name>CloseOk</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CloseProjectAsFuckup --></label>
+        <name>CloseProjectAsFuckup</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- DeleteWithApprov --></label>
+        <name>DeleteWithApprov</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- extendStage --></label>
+        <name>extendStage</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- nextStage --></label>
+        <name>nextStage</name>
+    </webLinks>
+    <workflowTasks>
+        <name>ActionTask</name>
+        <subject><!-- фыва --></subject>
+    </workflowTasks>
+</CustomObjectTranslation>

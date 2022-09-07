@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Статус организации --></label>
+        <name>Activity__c</name>
+        <picklistValues>
+            <masterLabel>Не было контакта</masterLabel>
+            <translation><!-- Не было контакта --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Первая сделка</masterLabel>
+            <translation><!-- Первая сделка --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Первый контакт</masterLabel>
+            <translation><!-- Первый контакт --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Постоянный клиент</masterLabel>
+            <translation><!-- Постоянный клиент --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

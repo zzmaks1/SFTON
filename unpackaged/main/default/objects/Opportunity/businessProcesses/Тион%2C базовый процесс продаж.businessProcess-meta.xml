@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Тион%2C базовый процесс продаж</fullName>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Гарантийная эксплуатация</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Государственная экспертиза проекта</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Заказ на производство оборудования</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Заключение договора с генподрядчиком</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Закрыто и не реализовано</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Закрыто как не профиль</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Закрыто как провал</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>КП Проектировщику</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>КП генподрядчику</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Конкурс на монтаж завершен</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Отгрузка оборудования</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Отслеживание конкурса на монтаж</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Отслеживание конкурса на проектирование</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Переговоры с генподрядчиком</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Переговоры с проектировщиком</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Подбор оборудования</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Получение копии проекта с оборудованием</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Постгарантийная эксплуатация</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Шеф-монтаж</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

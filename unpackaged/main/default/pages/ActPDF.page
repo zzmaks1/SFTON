@@ -1,0 +1,203 @@
+<apex:page standardController="act__c" extensions="ActExtensionController" showHeader="false" sidebar="false" standardStylesheets="false" renderAs="pdf" contentType="utf-8">
+    <head>     
+        <style>
+            body { 
+                font: normal 14px "Arial Unicode MS";
+                text-align: justify;
+                margin: 0px 30px 0px 60px;
+            }
+            p {
+                text-indent: 30px;
+                margin:0px;
+            }
+            .header {
+                text-align: center;
+                padding-top: 20px;
+            }
+            .header_duplicate {
+                position: relative;
+                top: -20px;
+                left: 1px;
+                text-align: center;
+            }
+            .bold_simulate {
+                position: absolute;
+            }
+            .billing_info {
+                width: 100%;
+                text-align: left;
+                padding: 0px;
+                margin: 0px;
+                border-collapse:collapse;
+            }
+            .billing_info tr, .billing_info td {
+                padding: 0px;
+                margin: 0px;
+            }
+            .billing_info td {
+                width: 50%;
+                vertical-align: top;
+            }           
+            @page {
+                @bottom-center {
+                    font: normal 14px "Arial Unicode MS";
+                    color: #000000;
+                    content: "";
+                }
+            }
+            .specification {
+                page-break-before: always;
+                width: 40%;
+                position: relative;
+                left: 350px;
+                font-size: 12px;
+                text-align: left;
+            }
+            .specificationTable {
+                border-collapse:collapse;
+                width: 100%;
+                text-align: center;
+            }
+            .specificationTable th, .specificationTable td{
+                border: 0.5px solid black;
+                padding: 3px;
+            }
+        </style> 
+    </head>
+    <body>
+    
+        <div class="header"><b>Акт сдачи-приемки работ</b></div>
+        <div class="header_duplicate"><b>Акт сдачи-приемки работ</b></div>
+        
+        
+        <div class="header"><b>№ {!act__c.Name} от {!StartDate}</b></div>
+        <div class="header_duplicate"><b>№ {!act__c.Name} от {!StartDate}</b></div>
+        
+        <br />
+        <br />
+         <div>
+             <p>Исполнитель: Общество с ограниченной ответственностью «Тион»</p>            
+             <p>Юридический адрес: 115088, г.Москва, ул.Шарикоподшипниковская, д.4, корп.1А</p>
+             <p>Заказчик: {!act__c.Client__c}</p>
+             <p>Адрес: {!act__c.Address__c}</p>
+        </div>
+        
+        <br />
+        <br />
+         <table class="specificationTable">                  
+                    <tr>
+                        <td>
+                            <apex:outputPanel >№ п/п</apex:outputPanel>
+                        </td>
+                        <td>
+                            <apex:outputPanel >Наименование работ</apex:outputPanel>
+                        </td>
+                        <td>
+                            <apex:outputPanel >Кол-во (объем)</apex:outputPanel>
+                        </td>
+                    </tr>                
+                    <tr>
+                        <td>
+                            <apex:outputPanel >1</apex:outputPanel>
+                        </td>
+                        <td>
+                            <apex:outputPanel >Выполнение работ по шефмонтажу оборудования «Тион»</apex:outputPanel>
+                        </td>
+                        <td>
+                            <apex:outputPanel >{!CountAssets}</apex:outputPanel>
+                        </td>
+                    </tr>
+         </table>
+        <br />
+        <br />
+        <div>
+        <p>
+            Вышеперечисленные работы выполнены в полном объеме, надлежащего качества,
+            в установленные Договором сроки.
+        </p>
+        <p>
+            Заказчик претензий по объему, качеству, а также срокам выполнения работ не
+            имеет.
+        </p>
+        <p>
+            Оборудование, перечисленное в Приложение 1, принимается на гарантийное
+            обслуживание с {!StartDate}
+            
+        </p>
+        </div>
+        
+        <br />
+        <br />
+    <table width='100%'>
+                    <tr><td height="40">Представитель заказчика:</td><td>Представитель исполнителя:</td></tr>
+                    <tr><td>{!act__c.PositionClient__c}</td><td>{!act__c.Position__c}</td></tr>
+                    <tr><td height="40">{!act__c.FioClient__c} /__________________</td><td>{!act__c.Fio__c} /__________________</td></tr>
+                    <tr><td height="50">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;М.П.</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;М.П.</td></tr>
+    </table>
+    
+    <div class="specification">    
+        <b>Приложение № 1</b><br />
+        К Акту № {!act__c.Name} от {!StartDate}
+    </div>
+    
+    
+        <div class="header">Перечень оборудования.</div>
+        <div class="header_duplicate">Перечень оборудования.</div>
+    <br /><br />
+    <apex:variable var="rowNum" value="{!1}"/> 
+            <table class="specificationTable">    
+                    <tr>
+                        <td>
+                            <apex:outputPanel >№</apex:outputPanel>
+                        </td>
+                        <td width="200">
+                            <apex:outputPanel >Серийный номер</apex:outputPanel>
+                        </td>
+                        <td width="200">
+                            <apex:outputPanel >Наименование оборудования</apex:outputPanel>
+                        </td>
+                        <td width="200">
+                            <apex:outputPanel >Дата ввода в эксплуатацию</apex:outputPanel>
+                        </td>
+                        <td width="200">
+                            <apex:outputPanel >Место эксплуатации</apex:outputPanel>
+                        </td>
+                        <td width="200">
+                            <apex:outputPanel >Особые отметки</apex:outputPanel>
+                        </td>
+                    </tr>                 
+                    <apex:repeat value="{!AssetList}" var="asset">             
+                    <tr>                        
+                        <td>
+                            <apex:outputText value="{!FLOOR(rowNum)}"/>
+                        </td>
+                        <td>
+                            <apex:outputText value="{!asset.SerialNumber}"/>
+                        </td>
+                        <td>
+                            <apex:outputText value="{!asset.Name}"/>
+                        </td>
+                        <td>
+                            <apex:outputText value="{!startDateMin}"/>
+                        </td>
+                        <td>
+                            <apex:outputText value=" {!IF(asset.buildingNumber__c != '','Корпус '+asset.buildingNumber__c + ', ','')}{!asset.level__c} этаж, кабинет №{!asset.roomNumber__c}"/>
+                        </td>
+                        <td>
+                            
+                        </td>                   
+                    </tr>
+                    <apex:variable var="rowNum" value="{!rowNum + 1}"/>
+                    </apex:repeat>
+                   
+            </table>
+        <br />
+        <br />
+    <table width='100%'>
+                    <tr><td height="40">Представитель заказчика:</td><td>Представитель исполнителя:</td></tr>
+                    <tr><td>{!act__c.PositionClient__c}</td><td>{!act__c.Position__c}</td></tr>
+                    <tr><td height="40">{!act__c.FioClient__c} /__________________</td><td>{!act__c.Fio__c} /__________________</td></tr>
+                    <tr><td height="50">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;М.П.</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;М.П.</td></tr>
+    </table>
+    </body>
+</apex:page>

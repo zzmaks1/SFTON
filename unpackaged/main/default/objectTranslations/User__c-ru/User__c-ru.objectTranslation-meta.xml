@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Пользователь ТИОН</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Пользователи ТИОН</value>
+    </caseValues>
+    
+    
+    
+    <gender>Neuter</gender>
+    <layouts>
+        <layout>Пользователь ТИОН: макет</layout>
+        <sections>
+            <label><!-- Настраиваемые ссылки --></label>
+            <section>Настраиваемые ссылки</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

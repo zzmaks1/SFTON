@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>В контакте</fullName>
+        <default>false</default>
+        <label>В контакте</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Открыто</fullName>
+        <default>true</default>
+        <label>Открыто</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Отвечает требованиям</fullName>
+        <default>false</default>
+        <label>Отвечает требованиям</label>
+        <converted>true</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Не отвечает требованиям</fullName>
+        <default>false</default>
+        <label>Не отвечает требованиям</label>
+        <converted>false</converted>
+    </standardValue>
+</StandardValueSet>

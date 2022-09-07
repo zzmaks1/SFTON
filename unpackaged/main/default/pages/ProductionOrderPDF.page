@@ -1,0 +1,174 @@
+<apex:page standardController="ProductionOrder__c" extensions="ProductionOrderExtentionController" showHeader="false" sidebar="false" standardStylesheets="false" renderAs="pdf" contentType="utf-8">
+    <apex:variable var="po_Name" value="{!ProductionOrder__c.Name}" />
+    <apex:variable var="po_opp" value="{!ProductionOrder__c.Opportunity__c}" />
+    <apex:variable var="po_Owner" value="{!ProductionOrder__c.Owner__c}" />
+    <apex:variable var="po_UserTION" value="{!ProductionOrder__c.UserTION__c}" />
+    <apex:variable var="po_SubmissionDate" value="{!ProductionOrder__c.SubmissionDate__c}" />
+    <apex:variable var="po_UID_1C" value="{!ProductionOrder__c.UID_1C__c}" />
+    <apex:variable var="po_Account" value="{!ProductionOrder__c.Account__c}" />
+    <apex:variable var="po_AccountContacts" value="{!ProductionOrder__c.AccountContacts__c}" />
+    <apex:variable var="po_Address" value="{!ProductionOrder__c.Address__c}" />
+    <apex:variable var="po_DeliveryPay" value="{!ProductionOrder__c.DeliveryPay__c}" />
+    <apex:variable var="po_EquipmentDate" value="{!ProductionOrder__c.EquipmentDate__c}" />
+    <apex:variable var="po_ShipmentDate" value="{!ProductionOrder__c.ShipmentDate__c}" />
+    <head>     
+        <style>
+            body { 
+                font: normal 14px "Arial Unicode MS";
+                text-align: justify;
+                margin: 0;
+            }
+            p {
+                text-indent: 30px;
+                margin:0px;
+            }
+            .products {
+                border-collapse:collapse;
+                width: 100%;
+                text-align: center;
+            }
+            .products tr.first{
+                font-size: 10px;
+             }
+             
+            .products td{
+                border: 0.5px solid black;
+                padding: 2px;
+                margin: 0px;
+            }
+            .header {
+                text-align: center;
+                padding-top: 20px;
+            }
+            .header_duplicate {
+                position: relative;
+                top: -20px;
+                left: 1px;
+                text-align: center;
+            }
+            .bold_simulate {
+                position: absolute;
+            }
+            .billing_info {
+                width: 100%;
+                text-align: left;
+                padding: 0px;
+                margin: 0px;
+                border-collapse:collapse;
+            }
+            .billing_info tr, .billing_info td {
+                padding: 0px;
+                margin: 0px;
+            }
+            .billing_info td {
+                width: 50%;
+                vertical-align: top;
+            }       
+            
+            .specification {
+                page-break-before: always;
+                width: 40%;
+                position: relative;
+                left: 350px;
+                font-size: 12px;
+                text-align: left;
+            }
+            .specificationTable {
+                border-collapse:collapse;
+                width: 100%;
+                text-align: center;
+            }
+            .specificationTable th, .specificationTable td{
+                border: 0.5px solid black;
+                padding: 3px;
+            }   
+            @page {
+                size: A4 landscape;
+            }
+        </style> 
+    </head>
+    <body>
+        <div class="header"><b>Производственный заказ {!ProductionOrder__c.Name}</b></div>        
+        <div>
+            <table style="width: 100%">
+                <tr>
+                    <td style="width:50%">Сотрудник, ответственный за производственный заказ: <apex:outputText value="{!ProductionOrder__c.UserTION__r.Name}" /></td>
+                    <td style="width:50%">Контрагент: <apex:outputText value="{!ProductionOrder__c.Account__r.Name}" /></td>
+                </tr>
+                <tr>
+                    <td>Дата представления утвержденной заявки: <apex:outputText value="{!SubmissionDate}" /></td>
+                    <td>Контакты контрагента: <apex:outputText value="{!ProductionOrder__c.AccountContacts__c}" /></td>
+                </tr>
+                <tr>
+                    <td>Производственный заказ на основе Сметы: <apex:outputText value="{!ProductionOrder__c.Quote__r.Name}" /></td>
+                    <td>Объект, название: <apex:outputText value="{!ProductionOrder__c.Opportunity__r.Name}" /></td>
+                </tr>
+                <tr>
+                    <td>Номер заказа поставщику в 1С: <apex:outputText value="{!ProductionOrder__c.UID_1C__c}" /></td>
+                    <td>Адрес объекта: <apex:outputText value="{!ProductionOrder__c.Address__c}" /></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Оплата доставки: <apex:outputText value="{!ProductionOrder__c.DeliveryPay__c}" /></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Дата производства оборудования: <apex:outputText value="{!EquipmentDate}" /></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Дата отгрузки оборудования на объект: <apex:outputText value="{!ShipmentDate}" /></td>
+                </tr>
+            </table>
+        </div>
+        <br /><br />
+        <div>
+            <p>
+                
+            </p>
+        </div>
+     
+        <div>
+            <table style="width: 100%" class="products">
+                <tr class="first">
+                    <td>№</td>
+                    <td style="width:20%">Продукт</td>
+                    <td>Количество</td>
+                    <td>Компоновка секций</td>
+                    <td>Сторона обслуживания</td>
+                    <td>Мед/Пром</td>
+                    <td>Наличие выносного пульта</td>
+                    <td>Особые отметки</td>
+                    <td>Ограничение на транспорти- ровочные габариты</td>
+                    <td>Нестандартный цвет корпуса (RAL)</td>
+                    <td>Нестандартные присоеди- нительные размеры (Впр х Шпр),мм</td>
+                    <td>Нестандартные габариты (ДхШхВ), мм</td>
+                    <td>Нестандартный способ крепления и монтажа</td>
+                    <td>Нестандартный перепад давления, Па</td>
+                    <td>Нестандартная производи- тельность, м3/час</td>
+                </tr>
+                <apex:repeat value="{!Products}" var="product">
+                    <tr class="first">
+                        <td><apex:outputText value="{!product.NumberPP__c}"/></td>
+                        <td><apex:outputText value="{!product.ProductName__c}"/></td>
+                        <td><apex:outputText value="{!product.CountItems__c}"/></td>
+                        <td><apex:outputText value="{!product.SectionComposition__c}"/></td>
+                        <td><apex:outputText value="{!product.SideService__c}"/></td>
+                        <td><apex:outputText value="{!product.medprom__c}"/></td>
+                        <td><apex:outputText value="{!product.SeparateControl__c}"/></td>
+                        <td><apex:outputText value="{!product.SpecialNotes__c}"/></td>
+                        <td><apex:outputText value="{!product.LimitSizeShipping__c}"/></td>
+                        <td><apex:outputText value="{!product.CustomBodyColor__c}"/></td>
+                        <td><apex:outputText value="{!product.CustomConnection__c}"/></td>
+                        <td><apex:outputText value="{!product.CustomSize__c}"/></td>
+                        <td><apex:outputText value="{!product.CustomMounting__c}"/></td>
+                        <td><apex:outputText value="{!product.CustomPressure__c}"/></td>
+                        <td><apex:outputText value="{!product.CustomPerformance__c}"/></td>
+                    </tr>
+                </apex:repeat>
+            </table>
+        </div>
+       
+
+  </body>
+</apex:page>

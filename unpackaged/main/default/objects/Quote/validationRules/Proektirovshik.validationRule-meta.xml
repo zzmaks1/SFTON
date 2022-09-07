@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Proektirovshik</fullName>
+    <active>true</active>
+    <description>Проектировщик не может создавать сметы</description>
+    <errorConditionFormula>$Profile.Name  == &#39;Проектировщик&#39;</errorConditionFormula>
+    <errorMessage>Вам запрещено создавать и редактировать сметы</errorMessage>
+</ValidationRule>

@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ServiceProjectType</fullName>
+    <active>true</active>
+    <businessProcess>Тион%2C продажа услуг сервиса</businessProcess>
+    <label>Продажа услуг сервиса</label>
+    <picklistValues>
+        <picklist>ForecastCategoryName</picklist>
+        <values>
+            <fullName>Благоприятный прогноз</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Закрыт</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Обязательства</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ожидаемые продажи</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Пропущен</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LeadSource</picklist>
+        <values>
+            <fullName>Выставка</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Гос%2Eзакупки</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Конференция</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Рекомендация</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Сайт</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ProjectProperties__c</picklist>
+        <values>
+            <fullName>Есть категорийные помещения%2E Смета маленькая</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Есть категорийные помещения%2E Смета нормальная</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Есть категорийные помещения%2E Стоит Тион</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Есть категорийные помещения%2E Уточнить смету</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Нет категорийных помещений</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Статус не ясен</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ProjectRegion__c</picklist>
+        <values>
+            <fullName>Абхазия</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Алтайский край</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Амурская область</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Архангельская область</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Астраханская область</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Белгородская область</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Брянская область</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Витебская область</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Владимирская область</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Волгоградская область</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Вологодская область</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Воронежская область</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Гомельская область</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Еврейская автономная область</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Забайкальский край</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ивановская область</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Иркутская область</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Калининградская область</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Калужская область</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Камчатский край</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Кемеровская область</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Киев</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Кировская область</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Костромская область</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Краснодарский край</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Красноярский край</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Курганская область</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Курская область</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ленинградская область</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Липецкая область</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Луганская область</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Магаданская область</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Минск</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Минская область</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Молдавия</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Москва</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Московская область</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Мурманская область</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ненецкий автономный округ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Нижегородская область</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Новгородская область</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Новосибирская область</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Омская область</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Оренбургская область</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Орловская область</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Пензенская область</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Пермский край</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Приднестровская республика</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Приморский край</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Псковская область</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Республика Адыгея</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Республика Алтай</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Республика Башкортостан</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Республика Бурятия</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Республика Дагестан</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Республика Ингушетия</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Республика Кабардино-Балкарская</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Республика Калмыкия</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Республика Карачаево-Черкесская</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Республика Карелия</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Республика Коми</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Республика Крым</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Республика Марий Эл</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Республика Мордовия</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Республика Саха %28Якутия%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Республика Северная Осетия %E2%80%94 Алания</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Республика Татарстан</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Республика Тыва %28Тува%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Республика Удмуртская</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Республика Хакасия</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Республика Чеченская</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Республика Чувашская</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ростовская область</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Рязанская область</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Самарская область</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Санкт-Петербург</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Саратовская область</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Сахалинская область</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Свердловская область</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Севастополь</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Смоленская область</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ставропольский край</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Тамбовская область</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Тверская область</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Томская область</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Тульская область</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Тюменская область</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Узбекистан</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ульяновская область</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Хабаровский край</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ханты-Мансийский автономный округ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Челябинская область</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Чукотский автономный округ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Южно-Казахстанская область</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ямало-Ненецкий автономный округ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ярославская область</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Архивы%2C библиотеки</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Атомная промышленность</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Виварии</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Детские сады%2C Школы</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Дома ребенка и детские дома</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Медицина</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Микробиологические лаборатории</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Очистные сооружения</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Пищевка</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Прочее</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

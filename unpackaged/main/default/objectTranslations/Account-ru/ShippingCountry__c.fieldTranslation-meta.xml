@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Страна (фактическая) --></label>
+        <name>ShippingCountry__c</name>
+        <picklistValues>
+            <masterLabel>Абхазия</masterLabel>
+            <translation><!-- Абхазия --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Австрия</masterLabel>
+            <translation><!-- Австрия --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Беларусь</masterLabel>
+            <translation><!-- Беларусь --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Казахстан</masterLabel>
+            <translation><!-- Казахстан --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Литва</masterLabel>
+            <translation><!-- Литва --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Молдавия</masterLabel>
+            <translation><!-- Молдавия --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Монголия</masterLabel>
+            <translation><!-- Монголия --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Приднестровская республика</masterLabel>
+            <translation><!-- Приднестровская республика --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Россия</masterLabel>
+            <translation><!-- Россия --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Словакия</masterLabel>
+            <translation><!-- Словакия --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Узбекистан</masterLabel>
+            <translation><!-- Узбекистан --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Украина</masterLabel>
+            <translation><!-- Украина --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

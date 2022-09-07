@@ -1,0 +1,106 @@
+<apex:page showHeader="true" controller="OpportunitySearch" tabStyle="Opportunity">   
+ <apex:sectionHeader title="Поиск по проектам" />
+    
+    <apex:form >
+        <apex:outputPanel id="page" layout="block" >
+            <apex:pageBlock id="filter" title="Фильтр"> 
+                <apex:pageMessages />                
+                <apex:pageBlockButtons >
+                    <apex:commandButton action="{!searchOpp}" value="Поиск"/>
+                </apex:pageBlockButtons>
+
+                <apex:pageBlockSection columns="2">
+                    <apex:inputField value="{!oppGroup.UserTION__c}" id="sTion"/>
+                    <apex:inputField value="{!oppGroup.UserRole__c}" id="sRole"/>
+                </apex:pageBlockSection> 
+          
+            </apex:pageBlock>
+        </apex:outputPanel>
+        
+        <apex:variable var="ors" value="{!opp_r}"/>
+    <apex:pageBlock rendered="{!renderResult}">
+    <apex:pageBlockTable value="{!ors}" var="opp" id="theTable" style="width:100%">
+
+                            
+		<apex:column >
+
+		    <apex:facet name="header"> 
+                    <apex:commandLink action="{!empty}">
+                        <apex:outputText value="Наименование" />
+                        <apex:outputText escape="false" rendered="{!sortBy=='Name'&&sortDir=='ASC'}">
+                        <img src="/s.gif" alt="Sorted Ascending" class="sortAsc" title="Sorted Ascending" />
+                        </apex:outputText>
+                        <apex:outputText escape="false" rendered="{!sortBy=='Name'&&sortDir=='DESC'}">
+                        <img src="/s.gif" alt="Sorted Descending" class="sortDesc" title="Sorted Descending" />
+                        </apex:outputText>
+                        <apex:param value="Name" name="column" assignTo="{!sortBy}" />
+                        <apex:param value="{!IF(sortDir=='ASC'&&sortBy=='Name', 'DESC', 'ASC')}" name="direction" assignTo="{!sortDir}" />
+                    </apex:commandLink>
+            </apex:facet>
+
+            <a href="{!opp.url}">{!opp.name}</a>
+
+		</apex:column>
+                            
+		<apex:column >
+
+		        <apex:facet name="header"><apex:commandLink action="{!empty}">
+                        <apex:outputText value="Регион" />
+                        <apex:outputText escape="false" rendered="{!sortBy=='ProjectRegion__c'&&sortDir=='ASC'}">
+                        <img src="/s.gif" alt="Sorted Ascending" class="sortAsc" title="Sorted Ascending" />
+                        </apex:outputText>
+                        <apex:outputText escape="false" rendered="{!sortBy=='ProjectRegion__c'&&sortDir=='DESC'}">
+                        <img src="/s.gif" alt="Sorted Descending" class="sortDesc" title="Sorted Descending" />
+                        </apex:outputText>
+                        <apex:param value="ProjectRegion__c" name="column" assignTo="{!sortBy}" />
+                        <apex:param value="{!IF(sortDir=='ASC'&&sortBy=='ProjectRegion__c', 'DESC', 'ASC')}" name="direction" assignTo="{!sortDir}" />
+                    </apex:commandLink></apex:facet>
+
+			<apex:outputText value="{!opp.ProjectRegion}"/>
+
+		</apex:column>
+                            
+		<apex:column >
+
+		        <apex:facet name="header"><apex:commandLink action="{!empty}">
+                        <apex:outputText value="Сметная стоимость" />
+                        <apex:outputText escape="false" rendered="{!sortBy=='Amount'&&sortDir=='ASC'}">
+                        <img src="/s.gif" alt="Sorted Ascending" class="sortAsc" title="Sorted Ascending" />
+                        </apex:outputText>
+                        <apex:outputText escape="false" rendered="{!sortBy=='Amount'&&sortDir=='DESC'}">
+                        <img src="/s.gif" alt="Sorted Descending" class="sortDesc" title="Sorted Descending" />
+                        </apex:outputText>
+                        <apex:param value="Amount" name="column" assignTo="{!sortBy}" />
+                        <apex:param value="{!IF(sortDir=='ASC'&&sortBy=='Amount', 'DESC', 'ASC')}" name="direction" assignTo="{!sortDir}" />
+                    </apex:commandLink></apex:facet>
+
+			<apex:outputText value="{!opp.Amount}"/>
+
+		</apex:column>
+                            
+		<apex:column >
+
+		        <apex:facet name="header">
+                    <apex:commandLink action="{!empty}">
+                        <apex:outputText value="Этап" />
+                        <apex:outputText escape="false" rendered="{!sortBy=='StageName'&&sortDir=='ASC'}">
+                        <img src="/s.gif" alt="Sorted Ascending" class="sortAsc" title="Sorted Ascending" />
+                        </apex:outputText>
+                        <apex:outputText escape="false" rendered="{!sortBy=='StageName'&&sortDir=='DESC'}">
+                        <img src="/s.gif" alt="Sorted Descending" class="sortDesc" title="Sorted Descending" />
+                        </apex:outputText>
+                        <apex:param value="StageName" name="column" assignTo="{!sortBy}" />
+                        <apex:param value="{!IF(sortDir=='ASC'&&sortBy=='StageName', 'DESC', 'ASC')}" name="direction" assignTo="{!sortDir}" />
+                    </apex:commandLink>
+            </apex:facet>
+            
+
+			<apex:outputText value="{!opp.StageName}"/>
+
+		</apex:column>
+
+	</apex:pageBlockTable>
+</apex:pageBlock>
+        
+    </apex:form>
+</apex:page>

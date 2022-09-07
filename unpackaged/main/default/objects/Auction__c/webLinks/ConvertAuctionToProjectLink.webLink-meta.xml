@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ConvertAuctionToProjectLink</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Конвертировать в проект</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!requireScript(&quot;/soap/ajax/26.0/connection.js&quot;)} //adds the proper code for inclusion of AJAX toolkit
+var url = parent.location.href; //string for the URL of the current page
+var result = sforce.connection.query(&quot;Select Id, AuctionStatus__c from Auction__c where Id=\&#39;&quot; + window.location.pathname.substring(1) + &quot;\&#39;&quot;);
+var auction = result.getArray(&quot;records&quot;)[0];
+var isNextStageConfirmed = false;
+if(auction.AuctionStatus__c == &#39;Не просмотрен&#39;){
+    //auction.AuctionStatus__c = &#39;Конвертирован в проект&#39;;
+    isNextStageConfirmed = confirm(&quot;Вы уверены, что хотите конвертировать конкурс в проект?&quot;);
+    if(isNextStageConfirmed){
+        //var response = sforce.connection.update(new Array(auction));
+navigateToUrl(&#39;/setup/ui/recordtypeselect.jsp?ent=Opportunity&amp;retURL=%2Fa03%2Fo&amp;save_new_url=%2F006%2Fe%3FretURL%3D%252F006%252Fo&amp;auctionId=&#39;+auction.Id,null,&#39;new&#39;);
+    }
+}</url>
+</WebLink>

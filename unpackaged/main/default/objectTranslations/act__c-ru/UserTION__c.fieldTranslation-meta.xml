@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Сотрудник ответственный за Акт --></label>
+        <name>UserTION__c</name>
+        <relationshipLabel><!-- Акты шеф-монтажа --></relationshipLabel>
+    </CustomFieldTranslation>

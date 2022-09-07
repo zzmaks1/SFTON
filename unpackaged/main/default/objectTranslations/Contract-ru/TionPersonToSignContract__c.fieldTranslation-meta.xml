@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Подпись со стороны Тион от --></label>
+        <name>TionPersonToSignContract__c</name>
+        <picklistValues>
+            <masterLabel>А.С. Жучков</masterLabel>
+            <translation><!-- А.С. Жучков --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>В. В. Салимгареев</masterLabel>
+            <translation><!-- В. В. Салимгареев --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>М.А. Амелькин</masterLabel>
+            <translation><!-- М.А. Амелькин --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Вызов</fullName>
+        <default>false</default>
+        <label>Вызов</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Отправить письмо</fullName>
+        <default>false</default>
+        <label>Отправить письмо</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Отправить смету</fullName>
+        <default>false</default>
+        <label>Отправить смету</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Другое</fullName>
+        <default>false</default>
+        <label>Другое</label>
+    </standardValue>
+</StandardValueSet>

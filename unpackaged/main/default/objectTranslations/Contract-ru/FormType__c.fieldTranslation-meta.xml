@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Форма договора --></label>
+        <name>FormType__c</name>
+        <picklistValues>
+            <masterLabel>Договор без шеф-монтажа</masterLabel>
+            <translation><!-- Договор без шеф-монтажа --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Договор с шеф-монтажом</masterLabel>
+            <translation><!-- Договор с шеф-монтажом --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

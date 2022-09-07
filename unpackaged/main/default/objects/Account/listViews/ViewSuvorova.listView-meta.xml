@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ViewSuvorova</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>Activity__c</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>Email__c</columns>
+    <columns>ACCOUNT.LAST_ACTIVITY</columns>
+    <columns>ShippingRegion__c</columns>
+    <columns>UserTION__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>UserTION__c</field>
+        <operation>equals</operation>
+        <value>Анастасия Суворова</value>
+    </filters>
+    <label>Дилеры А.Суворовой</label>
+    <language>ru</language>
+</ListView>

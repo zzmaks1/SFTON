@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Роли в проекте --></label>
+        <name>ProjectRoles__c</name>
+        <picklistValues>
+            <masterLabel>Генподрядчик</masterLabel>
+            <translation><!-- Генподрядчик --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Генпроектировщик</masterLabel>
+            <translation><!-- Генпроектировщик --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Дилер</masterLabel>
+            <translation><!-- Дилер --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Заказчик</masterLabel>
+            <translation><!-- Заказчик --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Субподрядчик</masterLabel>
+            <translation><!-- Субподрядчик --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Субпроектировщик</masterLabel>
+            <translation><!-- Субпроектировщик --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Эксплуатация</masterLabel>
+            <translation><!-- Эксплуатация --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

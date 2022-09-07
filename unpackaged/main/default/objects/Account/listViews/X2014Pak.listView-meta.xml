@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X2014Pak</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>Activity__c</columns>
+    <columns>ShippingRegion__c</columns>
+    <columns>UserTION__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>UserTION__c</field>
+        <operation>equals</operation>
+        <value>Василий Пак</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.TYPE</field>
+        <operation>equals</operation>
+        <value>Потенциальный дилер</value>
+    </filters>
+    <label>Мир Климата 2014 (В.Пак)</label>
+    <language>ru</language>
+</ListView>

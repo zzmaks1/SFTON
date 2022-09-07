@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PuskonaladkaSnds__c</fullName>
+    <externalId>false</externalId>
+    <formula>SUBSTITUTE(TEXT(Puskonaladka__c), &quot;.&quot;, &quot;,&quot;)   &amp; &quot; руб., включая НДС 20%&quot;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Стоимость работ по пуско-наладке</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

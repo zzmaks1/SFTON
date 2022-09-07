@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MyActiveProjects</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ProjectRegion__c</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>ProjectProperties__c</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>notEqual</operation>
+        <value>Закрыто и реализовано,Закрыто и не реализовано,Закрыто как не профиль</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>notEqual</operation>
+        <value>Закрыто как провал</value>
+    </filters>
+    <label>Мои активные проекты</label>
+    <language>ru</language>
+</ListView>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Semenikhin_projects</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ProjectRegion__c</columns>
+    <columns>OPPORTUNITY.AMOUNT</columns>
+    <columns>AuctionDateDesign__c</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>AuctionLinkMounting__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>UserTION__c</field>
+        <operation>contains</operation>
+        <value>Семенихин</value>
+    </filters>
+    <label>Все проекты Семенихина</label>
+    <language>ru</language>
+</ListView>

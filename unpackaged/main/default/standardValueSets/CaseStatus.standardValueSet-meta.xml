@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Новое</fullName>
+        <default>true</default>
+        <label>Новое</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>В работе</fullName>
+        <default>false</default>
+        <label>В работе</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Закрыто</fullName>
+        <default>false</default>
+        <label>Закрыто</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Перенос выполнения</fullName>
+        <default>false</default>
+        <label>Перенос выполнения</label>
+        <closed>false</closed>
+    </standardValue>
+</StandardValueSet>

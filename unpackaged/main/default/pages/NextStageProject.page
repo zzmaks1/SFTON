@@ -1,0 +1,14 @@
+<apex:page showHeader="true" standardController="Opportunity" extensions="OpportunityExtentionController" tabStyle="Opportunity">
+    <apex:sectionHeader title="Перейти к следующему этапу" />
+
+    <apex:variable var="opp_stageName" value="{!Opportunity.stageName}" />
+    <apex:variable var="opp_recordTypeId" value="{!Opportunity.recordTypeId}" />   
+    <apex:variable var="opp_ownerId" value="{!Opportunity.ownerId}" />    
+    <apex:variable var="opp_StartWorkingProducts" value="{!Opportunity.StartWorkingProducts__c}" />   
+    <apex:variable var="opp_HiddenStageNameBeforeApprovalStarts" value="{!Opportunity.HiddenStageNameBeforeApprovalStarts__c}" />   
+    
+    
+    <apex:form >        
+        <apex:dynamicComponent componentValue="{!ShowNextStage}"/>
+    </apex:form>
+</apex:page>

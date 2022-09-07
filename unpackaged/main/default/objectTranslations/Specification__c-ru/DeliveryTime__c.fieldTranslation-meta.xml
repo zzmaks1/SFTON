@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Срок поставки --></label>
+        <name>DeliveryTime__c</name>
+        <picklistValues>
+            <masterLabel>до</masterLabel>
+            <translation><!-- до --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>календарных дней</masterLabel>
+            <translation><!-- календарных дней --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>календарных месяцев</masterLabel>
+            <translation><!-- календарных месяцев --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>рабочих дней</masterLabel>
+            <translation><!-- рабочих дней --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

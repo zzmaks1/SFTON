@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Приветствия</fullName>
+        <default>true</default>
+        <label>Приветствия</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Вопросы и ответы</fullName>
+        <default>false</default>
+        <label>Вопросы и ответы</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Прощания</fullName>
+        <default>false</default>
+        <label>Прощания</label>
+    </standardValue>
+</StandardValueSet>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>View060715_2</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ShippingCountry__c</columns>
+    <columns>ShippingRegion__c</columns>
+    <columns>ShippingCity__c</columns>
+    <columns>ShippingStreet__c</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>Email__c</columns>
+    <columns>ACCOUNT.URL</columns>
+    <columns>Activity__c</columns>
+    <columns>Field1__c</columns>
+    <columns>UserTION__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>UserTION__c</field>
+        <operation>equals</operation>
+        <value>Дмитрий Насибулин</value>
+    </filters>
+    <label>Организации Д.Насибулина</label>
+    <language>ru</language>
+</ListView>

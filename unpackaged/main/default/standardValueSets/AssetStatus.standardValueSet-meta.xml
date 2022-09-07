@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Куплено</fullName>
+        <default>false</default>
+        <label>Куплено</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Доставлено</fullName>
+        <default>false</default>
+        <label>Доставлено</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Установлено</fullName>
+        <default>false</default>
+        <label>Установлено</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Зарегистрировано</fullName>
+        <default>false</default>
+        <label>Зарегистрировано</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Устарело</fullName>
+        <default>false</default>
+        <label>Устарело</label>
+    </standardValue>
+</StandardValueSet>

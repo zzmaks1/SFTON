@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ProductionTime__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Например, &quot;60 рабочих дней с даты оплаты&quot;</inlineHelpText>
+    <label>Срок производства</label>
+    <required>true</required>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1 рабочий день</fullName>
+                <default>false</default>
+                <label>1 рабочий день</label>
+            </value>
+            <value>
+                <fullName>1,5 месяца</fullName>
+                <default>false</default>
+                <label>1,5 месяца</label>
+            </value>
+            <value>
+                <fullName>10 дней</fullName>
+                <default>false</default>
+                <label>10 дней</label>
+            </value>
+            <value>
+                <fullName>10 р.д.</fullName>
+                <default>false</default>
+                <label>10 р.д.</label>
+            </value>
+            <value>
+                <fullName>10 раб. дней после написания запроса на шеф-монтаж</fullName>
+                <default>false</default>
+                <label>10 раб. дней после написания запроса на шеф-монтаж</label>
+            </value>
+            <value>
+                <fullName>10 рабочих дней</fullName>
+                <default>false</default>
+                <label>10 рабочих дней</label>
+            </value>
+            <value>
+                <fullName>10 рабочих дней (при отсутсвие на складе)</fullName>
+                <default>false</default>
+                <label>10 рабочих дней (при отсутсвие на складе)</label>
+            </value>
+            <value>
+                <fullName>10 рабочих дней (при отсутствии на складе)</fullName>
+                <default>false</default>
+                <label>10 рабочих дней (при отсутствии на складе)</label>
+            </value>
+            <value>
+                <fullName>10 рабочих дней в Новосибирске</fullName>
+                <default>false</default>
+                <label>10 рабочих дней в Новосибирске</label>
+            </value>
+            <value>
+                <fullName>10 рабочих дней после оплаты</fullName>
+                <default>false</default>
+                <label>10 рабочих дней после оплаты</label>
+            </value>
+            <value>
+                <fullName>11 рабочих дней</fullName>
+                <default>false</default>
+                <label>11 рабочих дней</label>
+            </value>
+            <value>
+                <fullName>12 рабочих дней</fullName>
+                <default>false</default>
+                <label>12 рабочих дней</label>
+            </value>
+            <value>
+                <fullName>125 рабочих дней</fullName>
+                <default>false</default>
+                <label>125 рабочих дней</label>
+            </value>
+            <value>
+                <fullName>14 рабочих дней</fullName>
+                <default>false</default>
+                <label>14 рабочих дней</label>
+            </value>
+            <value>
+                <fullName>15 раб дней</fullName>
+                <default>false</default>
+                <label>15 раб дней</label>
+            </value>
+            <value>
+                <fullName>15 рабочих дне</fullName>
+                <default>false</default>
+                <label>15 рабочих дне</label>
+            </value>
+            <value>
+                <fullName>15 рабочих дней</fullName>
+                <default>false</default>
+                <label>15 рабочих дней</label>
+            </value>
+            <value>
+                <fullName>15 рабочих дней (при отсутствии на складе)</fullName>
+                <default>false</default>
+                <label>15 рабочих дней (при отсутствии на складе)</label>
+            </value>
+            <value>
+                <fullName>15 рабочих дней в Новосибирске</fullName>
+                <default>false</default>
+                <label>15 рабочих дней в Новосибирске</label>
+            </value>
+            <value>
+                <fullName>15 рабочих дней, часто бывают в наличии на складе</fullName>
+                <default>false</default>
+                <label>15 рабочих дней, часто бывают в наличии на складе</label>
+            </value>
+            <value>
+                <fullName>16 рабочих дней</fullName>
+                <default>false</default>
+                <label>16 рабочих дней</label>
+            </value>
+            <value>
+                <fullName>17 рабочих дней</fullName>
+                <default>false</default>
+                <label>17 рабочих дней</label>
+            </value>
+            <value>
+                <fullName>18 рабочих дней</fullName>
+                <default>false</default>
+                <label>18 рабочих дней</label>
+            </value>
+            <value>
+                <fullName>2 месяца</fullName>
+                <default>false</default>
+                <label>2 месяца</label>
+            </value>
+            <value>
+                <fullName>2 недели</fullName>
+                <default>false</default>
+                <label>2 недели</label>
+            </value>
+            <value>
+                <fullName>2 рабочих дня</fullName>
+                <default>false</default>
+                <label>2 рабочих дня</label>
+            </value>
+            <value>
+                <fullName>20 рабочих дней</fullName>
+                <default>false</default>
+                <label>20 рабочих дней</label>
+            </value>
+            <value>
+                <fullName>20 календарных дней</fullName>
+                <default>false</default>
+                <label>20 календарных дней</label>
+            </value>
+            <value>
+                <fullName>20 рабочих дней (при отсутствии на складе)</fullName>
+                <default>false</default>
+                <label>20 рабочих дней (при отсутствии на складе)</label>
+            </value>
+            <value>
+                <fullName>21 календарный день</fullName>
+                <default>false</default>
+                <label>21 календарный день</label>
+            </value>
+            <value>
+                <fullName>21 рабочий день</fullName>
+                <default>false</default>
+                <label>21 рабочий день</label>
+            </value>
+            <value>
+                <fullName>22 рабочих дня</fullName>
+                <default>false</default>
+                <label>22 рабочих дня</label>
+            </value>
+            <value>
+                <fullName>25</fullName>
+                <default>false</default>
+                <label>25</label>
+            </value>
+            <value>
+                <fullName>25 дней</fullName>
+                <default>false</default>
+                <label>25 дней</label>
+            </value>
+            <value>
+                <fullName>25 календарных дней</fullName>
+                <default>false</default>
+                <label>25 календарных дней</label>
+            </value>
+            <value>
+                <fullName>25 рабочих дней</fullName>
+                <default>false</default>
+                <label>25 рабочих дней</label>
+            </value>
+            <value>
+                <fullName>25 рабочих дней (при отсутствии на складе)</fullName>
+                <default>false</default>
+                <label>25 рабочих дней (при отсутствии на складе)</label>
+            </value>
+            <value>
+                <fullName>26 рабочих дней</fullName>
+                <default>false</default>
+                <label>26 рабочих дней</label>
+            </value>
+            <value>
+                <fullName>28 рабочих дней</fullName>
+                <default>false</default>
+                <label>28 рабочих дней</label>
+            </value>
+            <value>
+                <fullName>3 дня</fullName>
+                <default>false</default>
+                <label>3 дня</label>
+            </value>
+            <value>
+                <fullName>30</fullName>
+                <default>false</default>
+                <label>30</label>
+            </value>
+            <value>
+                <fullName>30 дней</fullName>
+                <default>false</default>
+                <label>30 дней</label>
+            </value>
+            <value>
+                <fullName>30 календарных дней</fullName>
+                <default>false</default>
+                <label>30 календарных дней</label>
+            </value>
+            <value>
+                <fullName>30 рабочих дней</fullName>
+                <default>false</default>
+                <label>30 рабочих дней</label>
+            </value>
+            <value>
+                <fullName>30 рабочих дней (при отсутствии на складе)</fullName>
+                <default>false</default>
+                <label>30 рабочих дней (при отсутствии на складе)</label>
+            </value>
+            <value>
+                <fullName>32 рабочих дня</fullName>
+                <default>false</default>
+                <label>32 рабочих дня</label>
+            </value>
+            <value>
+                <fullName>35</fullName>
+                <default>false</default>
+                <label>35</label>
+            </value>
+            <value>
+                <fullName>35 календарных дней</fullName>
+                <default>false</default>
+                <label>35 календарных дней</label>
+            </value>
+            <value>
+                <fullName>35 рабочих дней</fullName>
+                <default>false</default>
+                <label>35 рабочих дней</label>
+            </value>
+            <value>
+                <fullName>40</fullName>
+                <default>false</default>
+                <label>40</label>
+            </value>
+            <value>
+                <fullName>40 рабочих дней</fullName>
+                <default>false</default>
+                <label>40 рабочих дней</label>
+            </value>
+            <value>
+                <fullName>40 рабочих дней (при отсутствии на складе)</fullName>
+                <default>false</default>
+                <label>40 рабочих дней (при отсутствии на складе)</label>
+            </value>
+            <value>
+                <fullName>45</fullName>
+                <default>false</default>
+                <label>45</label>
+            </value>
+            <value>
+                <fullName>45 дней</fullName>
+                <default>false</default>
+                <label>45 дней</label>
+            </value>
+            <value>
+                <fullName>45 календарных дней</fullName>
+                <default>false</default>
+                <label>45 календарных дней</label>
+            </value>
+            <value>
+                <fullName>45 рабочих дней</fullName>
+                <default>false</default>
+                <label>45 рабочих дней</label>
+            </value>
+            <value>
+                <fullName>45 рабочих дней (или по согласованию)</fullName>
+                <default>false</default>
+                <label>45 рабочих дней (или по согласованию)</label>
+            </value>
+            <value>
+                <fullName>45 рабочих дней (по согласованию)</fullName>
+                <default>false</default>
+                <label>45 рабочих дней (по согласованию)</label>
+            </value>
+            <value>
+                <fullName>45 рабочих дней (при отсутствии на складе)</fullName>
+                <default>false</default>
+                <label>45 рабочих дней (при отсутствии на складе)</label>
+            </value>
+            <value>
+                <fullName>45 рабочих дней с даты оплаты</fullName>
+                <default>false</default>
+                <label>45 рабочих дней с даты оплаты</label>
+            </value>
+            <value>
+                <fullName>45-50 рабочих дней</fullName>
+                <default>false</default>
+                <label>45-50 рабочих дней</label>
+            </value>
+            <value>
+                <fullName>454 рабочих дней</fullName>
+                <default>false</default>
+                <label>454 рабочих дней</label>
+            </value>
+            <value>
+                <fullName>5 дней</fullName>
+                <default>false</default>
+                <label>5 дней</label>
+            </value>
+            <value>
+                <fullName>5 рабочих</fullName>
+                <default>false</default>
+                <label>5 рабочих</label>
+            </value>
+            <value>
+                <fullName>5 рабочих дней</fullName>
+                <default>false</default>
+                <label>5 рабочих дней</label>
+            </value>
+            <value>
+                <fullName>5 рабочих дней в Новосибирске</fullName>
+                <default>false</default>
+                <label>5 рабочих дней в Новосибирске</label>
+            </value>
+            <value>
+                <fullName>5-7 рабочих дней</fullName>
+                <default>false</default>
+                <label>5-7 рабочих дней</label>
+            </value>
+            <value>
+                <fullName>50</fullName>
+                <default>false</default>
+                <label>50</label>
+            </value>
+            <value>
+                <fullName>50 календарных дней</fullName>
+                <default>false</default>
+                <label>50 календарных дней</label>
+            </value>
+            <value>
+                <fullName>50 рабочих дней</fullName>
+                <default>false</default>
+                <label>50 рабочих дней</label>
+            </value>
+            <value>
+                <fullName>55 рабочих дней</fullName>
+                <default>false</default>
+                <label>55 рабочих дней</label>
+            </value>
+            <value>
+                <fullName>6-8 недель</fullName>
+                <default>false</default>
+                <label>6-8 недель</label>
+            </value>
+            <value>
+                <fullName>60</fullName>
+                <default>false</default>
+                <label>60</label>
+            </value>
+            <value>
+                <fullName>60 дней</fullName>
+                <default>false</default>
+                <label>60 дней</label>
+            </value>
+            <value>
+                <fullName>60 календарных дней</fullName>
+                <default>false</default>
+                <label>60 календарных дней</label>
+            </value>
+            <value>
+                <fullName>60 календарных дней (по согласованию)</fullName>
+                <default>false</default>
+                <label>60 календарных дней (по согласованию)</label>
+            </value>
+            <value>
+                <fullName>60 рабочих дней</fullName>
+                <default>false</default>
+                <label>60 рабочих дней</label>
+            </value>
+            <value>
+                <fullName>60 рабочих дней (по согласованию)</fullName>
+                <default>false</default>
+                <label>60 рабочих дней (по согласованию)</label>
+            </value>
+            <value>
+                <fullName>60 рабочих дней с даты оплаты</fullName>
+                <default>false</default>
+                <label>60 рабочих дней с даты оплаты</label>
+            </value>
+            <value>
+                <fullName>60-70 рабочих дней</fullName>
+                <default>false</default>
+                <label>60-70 рабочих дней</label>
+            </value>
+            <value>
+                <fullName>60-80 рабочих дней</fullName>
+                <default>false</default>
+                <label>60-80 рабочих дней</label>
+            </value>
+            <value>
+                <fullName>65 рабочих дней</fullName>
+                <default>false</default>
+                <label>65 рабочих дней</label>
+            </value>
+            <value>
+                <fullName>7 рабочих дней</fullName>
+                <default>false</default>
+                <label>7 рабочих дней</label>
+            </value>
+            <value>
+                <fullName>70 рабочих дней</fullName>
+                <default>false</default>
+                <label>70 рабочих дней</label>
+            </value>
+            <value>
+                <fullName>80 рабочих дней</fullName>
+                <default>false</default>
+                <label>80 рабочих дней</label>
+            </value>
+            <value>
+                <fullName>85 Календарных дней</fullName>
+                <default>false</default>
+                <label>85 Календарных дней</label>
+            </value>
+            <value>
+                <fullName>90 календарных дней</fullName>
+                <default>false</default>
+                <label>90 календарных дней</label>
+            </value>
+            <value>
+                <fullName>90 рабочих дней</fullName>
+                <default>false</default>
+                <label>90 рабочих дней</label>
+            </value>
+            <value>
+                <fullName>В наличии</fullName>
+                <default>false</default>
+                <label>В наличии</label>
+            </value>
+            <value>
+                <fullName>В наличии на складе г. Новосибирск</fullName>
+                <default>false</default>
+                <label>В наличии на складе г. Новосибирск</label>
+            </value>
+            <value>
+                <fullName>КБ СМП им.Соловьева</fullName>
+                <default>false</default>
+                <label>КБ СМП им.Соловьева</label>
+            </value>
+            <value>
+                <fullName>Клинический госпиталь &quot;Мать и дитя&quot; Лапино, 2-я оч</fullName>
+                <default>false</default>
+                <label>Клинический госпиталь &quot;Мать и дитя&quot; Лапино, 2-я оч</label>
+            </value>
+            <value>
+                <fullName>РД г.Верхняя Пышма</fullName>
+                <default>false</default>
+                <label>РД г.Верхняя Пышма</label>
+            </value>
+            <value>
+                <fullName>Сооружение 300, г.Йошкар-Ола</fullName>
+                <default>false</default>
+                <label>Сооружение 300, г.Йошкар-Ола</label>
+            </value>
+            <value>
+                <fullName>оборудование в наличии</fullName>
+                <default>false</default>
+                <label>оборудование в наличии</label>
+            </value>
+            <value>
+                <fullName>по запросу</fullName>
+                <default>false</default>
+                <label>по запросу</label>
+            </value>
+            <value>
+                <fullName>по согласованию</fullName>
+                <default>false</default>
+                <label>по согласованию</label>
+            </value>
+            <value>
+                <fullName>работ: 10 раб.дней после написания офиц. запроса</fullName>
+                <default>false</default>
+                <label>работ: 10 раб.дней после написания офиц. запроса</label>
+            </value>
+            <value>
+                <fullName>со склада</fullName>
+                <default>false</default>
+                <label>со склада</label>
+            </value>
+            <value>
+                <fullName>согласуется</fullName>
+                <default>false</default>
+                <label>согласуется</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

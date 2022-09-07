@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <caseValues>
+            <caseType>Nominative</caseType>
+            <plural>false</plural>
+            <value>Подразделение проекта (сделки)</value>
+        </caseValues>
+        <gender>Neuter</gender>
+        <name>opportunity_division</name>
+    </CustomFieldTranslation>

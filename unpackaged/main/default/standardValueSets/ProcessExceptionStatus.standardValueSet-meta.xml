@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Новое</fullName>
+        <default>true</default>
+        <label>Новое</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Приоритизировано</fullName>
+        <default>false</default>
+        <label>Приоритизировано</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Приостановлено</fullName>
+        <default>false</default>
+        <label>Приостановлено</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Пропущено</fullName>
+        <default>false</default>
+        <label>Пропущено</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Разрешено</fullName>
+        <default>false</default>
+        <label>Разрешено</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Аннулировано</fullName>
+        <default>false</default>
+        <label>Аннулировано</label>
+    </standardValue>
+</StandardValueSet>

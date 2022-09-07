@@ -1,0 +1,53 @@
+<apex:page showHeader="true" standardController="Contract" tabStyle="Contract">
+    <apex:sectionHeader title="Редактирование договора"  subtitle="Создать договор" />
+    <apex:form id="oppForm">  
+        <apex:PageBlock title="Редактировать договор" id="PageBlock" mode="edit">
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{!save}" value="Сохранить"/>
+                <apex:commandButton action="{!cancel}" value="Отмена" immediate="true"/>
+            </apex:pageBlockButtons>
+            <apex:pageMessages />   
+            <apex:pageBlockSection showHeader="true" columns="2" collapsible="false" >
+                <apex:inputField id="Account" value="{!Contract.AccountId}" required="true"/>
+                <apex:inputField id="ShortBillingContractorName" value="{!Contract.ShortBillingContractorName__c  }" required="true"/>
+                <apex:inputField id="Project" value="{!Contract.ProjectName__c}" required="true"/>
+                <apex:inputField id="AccountBillingName" value="{!Contract.AccountBillingName__c}" required="true"/>
+                <apex:inputField id="ContractNumber" value="{!Contract.ContractNumber__c}" required="true"/>
+                <apex:inputField id="AccountCEO" value="{!Contract.AccountCEO__c}" required="true"/>
+                <apex:inputField id="StartDate" value="{!Contract.StartDate}" required="true"/>
+                <apex:inputField id="AccountCEOAct" value="{!Contract.AccountCEOAct__c}" required="true"/>
+                <apex:inputField id="Smeta" value="{!Contract.Smeta__c}" label="Смета" required="true"/>
+                <apex:inputField id="SignerPosition" value="{!Contract.SignerPosition__c}" required="true"/>
+                <apex:inputField id="UserTION" value="{!Contract.UserTION__c}" required="true"/>
+                <apex:inputField id="SignatureInitials" value="{!Contract.SignatureInitials__c}" required="true"/>
+                <apex:inputField id="FormType" value="{!Contract.FormType__c}" required="true"/>
+                <apex:inputField id="TionPersonToSignContract" value="{!Contract.TionPersonToSignContract__c}" required="true"/>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection showHeader="true" title="Сведения о спецификации" columns="1" collapsible="false" >
+                <apex:inputField id="SpecificationType__c" value="{!Contract.SpecificationType__c}" label="Тип спецификации" required="true"/>
+                <apex:inputField id="SpecificationNumber__c" value="{!Contract.SpecificationNumber__c}" label="Номер спецификации" required="true"/>
+                <apex:inputField id="SpecificationDate__c" value="{!Contract.SpecificationDate__c}" label="Дата создания спецификации" required="true"/>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection showHeader="true" title="Оплата" columns="2" collapsible="false" >
+                <apex:inputField id="Prepayment__c" value="{!Contract.Prepayment__c}" label="Размер предоплаты (процент)" required="true"/>
+                <apex:inputField id="Prepayment_days__c" value="{!Contract.Prepayment_days__c}" label="Срок предоплаты (дней)"/>
+                <apex:inputField id="Partpayment__c" value="{!Contract.Partpayment__c}" label="Оплата при готовности оборудования (процент)" required="true"/>
+                <apex:inputField id="Partpayment_days__c" value="{!Contract.Partpayment_days__c}" label="Срок при готовности оборудования (дней)"/>
+                <apex:inputField id="PostPayment__c" value="{!Contract.PostPayment__c}" label="Оплата после отгрузки (процент)" required="true"/>
+                <apex:inputField id="Postpayment_days__c" value="{!Contract.Postpayment_days__c}" label="Срок оплаты после отгрузки (дней)"/>
+                <apex:inputField id="PaymentDelayText__c" value="{!Contract.PaymentDelayText__c}" label="В случае задержки ден. средств в размере" required="true"/>
+                <apex:inputField id="InvoiceReadyInfo__c" value="{!Contract.InvoiceReadyInfo__c}" label="Готовность к отгрузке со склада" required="true"/>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection showHeader="true" title="Сведения о доставке" columns="2" collapsible="false" >
+                <apex:inputField id="DeliveryCondition__c" value="{!Contract.DeliveryCondition__c}" label="Доставка" required="true"/>
+                <apex:inputField id="DeliveryAddress__c" value="{!Contract.DeliveryAddress__c}" label="Адрес пункта поставки" required="true"/>
+                <apex:inputField id="Repository__c" value="{!Contract.Repository__c}" label="Склад самовывоза"/>
+                <apex:inputField id="CompanyDeliverTo__c" value="{!Contract.CompanyDeliverTo__c}" label="Грузополучатель" required="true"/>
+                <apex:inputField id="DeliveryTime__c" value="{!Contract.DeliveryTime__c}" required="true"/>
+                <apex:inputHidden />
+                <apex:inputField id="DeliveryDuration__c" value="{!Contract.DeliveryDuration__c}" required="true"/>
+                <apex:inputHidden id="Status" value="{!Contract.Status}"/>
+            </apex:pageBlockSection>
+        </apex:PageBlock>
+    </apex:form>
+</apex:page>

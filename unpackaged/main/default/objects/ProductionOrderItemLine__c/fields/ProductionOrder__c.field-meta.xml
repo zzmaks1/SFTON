@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ProductionOrder__c</fullName>
+    <externalId>false</externalId>
+    <label>Производственный заказ</label>
+    <referenceTo>ProductionOrder__c</referenceTo>
+    <relationshipLabel>Продукты заказа</relationshipLabel>
+    <relationshipName>POLIxaK2</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

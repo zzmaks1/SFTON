@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ProjectProperties__c</fullName>
+    <externalId>false</externalId>
+    <label>Характеристики проекта</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Статус не ясен</fullName>
+                <default>true</default>
+                <label>Статус не ясен</label>
+            </value>
+            <value>
+                <fullName>Есть категорийные помещения. Смета маленькая</fullName>
+                <default>false</default>
+                <label>Есть категорийные помещения. Смета маленькая</label>
+            </value>
+            <value>
+                <fullName>Есть категорийные помещения. Смета нормальная</fullName>
+                <default>false</default>
+                <label>Есть категорийные помещения. Смета нормальная</label>
+            </value>
+            <value>
+                <fullName>Есть категорийные помещения. Стоит Тион</fullName>
+                <default>false</default>
+                <label>Есть категорийные помещения. Стоит Тион</label>
+            </value>
+            <value>
+                <fullName>Есть категорийные помещения. Уточнить смету</fullName>
+                <default>false</default>
+                <label>Есть категорийные помещения. Уточнить смету</label>
+            </value>
+            <value>
+                <fullName>Нет категорийных помещений</fullName>
+                <default>false</default>
+                <label>Нет категорийных помещений</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

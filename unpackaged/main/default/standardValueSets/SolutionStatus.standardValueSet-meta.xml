@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Черновик</fullName>
+        <default>true</default>
+        <label>Черновик</label>
+        <reviewed>false</reviewed>
+    </standardValue>
+    <standardValue>
+        <fullName>Согласовано</fullName>
+        <default>false</default>
+        <label>Согласовано</label>
+        <reviewed>true</reviewed>
+    </standardValue>
+    <standardValue>
+        <fullName>Повторяющийся</fullName>
+        <default>false</default>
+        <label>Повторяющийся</label>
+        <reviewed>false</reviewed>
+    </standardValue>
+</StandardValueSet>

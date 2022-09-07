@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Личные данные</fullName>
+        <default>false</default>
+        <label>Личные данные</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Закон о преемственности и подотчётности медицинского страхования</fullName>
+        <default>false</default>
+        <label>Закон о преемственности и подотчётности медицинского страхования</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Генеральный регламент о защите данных</fullName>
+        <default>false</default>
+        <label>Генеральный регламент о защите данных</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Индустрия платежных карт</fullName>
+        <default>false</default>
+        <label>Индустрия платежных карт</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Закон о защите конфиденциальности детей в Интернете</fullName>
+        <default>false</default>
+        <label>Закон о защите конфиденциальности детей в Интернете</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Закон Калифорнии о конфиденциальности клиентов</fullName>
+        <default>false</default>
+        <label>Закон Калифорнии о конфиденциальности клиентов</label>
+    </standardValue>
+</StandardValueSet>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Нестандартные присоединительные размеры (Впр х Шпр),мм --></help>
+        <label><!-- Нестандартные п. размеры  (Впр х Шпр),мм --></label>
+        <name>CustomConnection__c</name>
+    </CustomFieldTranslation>

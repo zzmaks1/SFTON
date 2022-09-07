@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Сайт</fullName>
+        <default>false</default>
+        <label>Сайт</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Рекомендация</fullName>
+        <default>false</default>
+        <label>Рекомендация</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Конференция</fullName>
+        <default>false</default>
+        <label>Конференция</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Выставка</fullName>
+        <default>false</default>
+        <label>Выставка</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Гос.закупки</fullName>
+        <default>false</default>
+        <label>Гос.закупки</label>
+    </standardValue>
+</StandardValueSet>

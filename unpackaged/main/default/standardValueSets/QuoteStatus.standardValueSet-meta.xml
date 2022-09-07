@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Черновик</fullName>
+        <default>true</default>
+        <label>Черновик</label>
+        <allowEmail>true</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>Требует согласования</fullName>
+        <default>false</default>
+        <label>Требует согласования</label>
+        <allowEmail>true</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>В процессе рассмотрения</fullName>
+        <default>false</default>
+        <label>В процессе рассмотрения</label>
+        <allowEmail>true</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>Утверждено</fullName>
+        <default>false</default>
+        <label>Утверждено</label>
+        <allowEmail>true</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>Отклонено</fullName>
+        <default>false</default>
+        <label>Отклонено</label>
+        <allowEmail>true</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>Передано на рассмотрение</fullName>
+        <default>false</default>
+        <label>Передано на рассмотрение</label>
+        <allowEmail>true</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>Принято</fullName>
+        <default>false</default>
+        <label>Принято</label>
+        <allowEmail>true</allowEmail>
+    </standardValue>
+    <standardValue>
+        <fullName>Отказано</fullName>
+        <default>false</default>
+        <label>Отказано</label>
+        <allowEmail>true</allowEmail>
+    </standardValue>
+</StandardValueSet>

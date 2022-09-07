@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Рекламодатель</fullName>
+        <default>false</default>
+        <label>Рекламодатель</label>
+        <reverseRole>Производитель</reverseRole>
+    </standardValue>
+    <standardValue>
+        <fullName>Агентство</fullName>
+        <default>false</default>
+        <label>Агентство</label>
+        <reverseRole>Клиент</reverseRole>
+    </standardValue>
+    <standardValue>
+        <fullName>Брокер</fullName>
+        <default>false</default>
+        <label>Брокер</label>
+        <reverseRole>Агент</reverseRole>
+    </standardValue>
+    <standardValue>
+        <fullName>Консультант</fullName>
+        <default>false</default>
+        <label>Консультант</label>
+        <reverseRole>Клиент</reverseRole>
+    </standardValue>
+    <standardValue>
+        <fullName>Дилер</fullName>
+        <default>false</default>
+        <label>Дилер</label>
+        <reverseRole>Поставщик</reverseRole>
+    </standardValue>
+    <standardValue>
+        <fullName>Разработчик</fullName>
+        <default>false</default>
+        <label>Разработчик</label>
+        <reverseRole>Производитель</reverseRole>
+    </standardValue>
+    <standardValue>
+        <fullName>Дистрибьютор</fullName>
+        <default>false</default>
+        <label>Дистрибьютор</label>
+        <reverseRole>Производитель</reverseRole>
+    </standardValue>
+    <standardValue>
+        <fullName>Учреждение</fullName>
+        <default>false</default>
+        <label>Учреждение</label>
+        <reverseRole>Клиент</reverseRole>
+    </standardValue>
+    <standardValue>
+        <fullName>Кредитор</fullName>
+        <default>false</default>
+        <label>Кредитор</label>
+        <reverseRole>Брокер</reverseRole>
+    </standardValue>
+    <standardValue>
+        <fullName>Системный интегратор</fullName>
+        <default>false</default>
+        <label>Системный интегратор</label>
+        <reverseRole>Клиент</reverseRole>
+    </standardValue>
+    <standardValue>
+        <fullName>Активный посредник</fullName>
+        <default>false</default>
+        <label>Активный посредник</label>
+        <reverseRole>Производитель</reverseRole>
+    </standardValue>
+</StandardValueSet>

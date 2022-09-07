@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Роль --></label>
+        <name>UserRole__c</name>
+        <picklistValues>
+            <masterLabel>Менеджер по продажам</masterLabel>
+            <translation><!-- Менеджер по продажам --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Проектировщик</masterLabel>
+            <translation><!-- Проектировщик --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Региональный менеджер по продажам</masterLabel>
+            <translation><!-- Региональный менеджер по продажам --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Руководитель отдела продаж</masterLabel>
+            <translation><!-- Руководитель отдела продаж --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Руководитель сервисной службы</masterLabel>
+            <translation><!-- Руководитель сервисной службы --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Сервисный инженер</masterLabel>
+            <translation><!-- Сервисный инженер --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

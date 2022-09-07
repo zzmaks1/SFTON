@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ChangeProjectStageButton</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Перейти к следующему этапу</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/27.0/connection.js&quot;)} //adds the proper code for inclusion of AJAX toolkit
+var url = parent.location.href; //string for the URL of the current page
+var result = sforce.connection.query(&quot;Select Id, Name, StageName, ActualAmount__c, ProjectRegion__c from Opportunity where Id=\&#39;&quot; +        window.location.pathname.substring(1) + &quot;\&#39;&quot;);
+var project = result.getArray(&quot;records&quot;)[0];
+result = sforce.connection.query(&quot;Select MasterLabel from OpportunityStage where IsActive=True order by SortOrder&quot;);
+projectStagesArray = result.getArray(&quot;records&quot;);
+try{
+    for(var i=0; i&lt;projectStagesArray.length; i++) {
+        if(project.StageName == projectStagesArray[i].MasterLabel) {
+            if(project.StageName == &quot;Закрыто и реализовано&quot;) { 
+                break;
+            }
+            
+            if(project.StageName == &quot;Отслеживание конкурса на проектирование&quot;) {
+                projectMembers = sforce.connection.query(&quot;select ProjectRoles__c, AccountId__c from ProjectMember__c where OpportunityId__c=\&#39;&quot;+project.Id+&quot;\&#39;&quot;).getArray(&quot;records&quot;);
+                isDesignerAdded = false;
+                for(var j=0; j&lt;= projectMembers.length-1; j++){
+                    if(projectMembers[j].ProjectRoles__c.search(&quot;Генпроектировщик&quot;) != -1) {
+                        isDesignerAdded = true;
+                        account = sforce.connection.query(&quot;select ShippingRegion__c from Account where Id=\&#39;&quot;+projectMembers[j].AccountId__c+&quot;\&#39;&quot;).getArray(&quot;records&quot;)[0];
+                        project.ProjectRegion__c = account.ShippingRegion__c;
+                        break;
+                    }
+                }
+                if(!isDesignerAdded) throw &quot;Err1&quot;;
+            
+            }
+
+            if(project.StageName == &quot;Подбор оборудования&quot;) {
+                proj = sforce.connection.query(&quot;Select HasOpportunityLineItem from Opportunity where Id=\&#39;&quot; + project.Id + &quot;\&#39;&quot;).getArray(&quot;records&quot;)[0];
+                if(proj.HasOpportunityLineItem == &quot;false&quot;) throw &quot;Err2&quot;;
+            }
+
+            if(project.StageName == &quot;КП Проектировщику&quot; || project.StageName == &quot;КП генподрядчику&quot;) {
+                projectQuotes = sforce.connection.query(&quot;Select Id from Quote where OpportunityId=\&#39;&quot; + project.Id + &quot;\&#39;&quot;).getArray(&quot;records&quot;);
+                if(projectQuotes.length == 0) throw &quot;Err3&quot;;
+            }
+
+            if(project.StageName == &quot;Отслеживание конкурса на монтаж&quot;) {
+                projectMembers = sforce.connection.query(&quot;select ProjectRoles__c, AccountId__c from ProjectMember__c where OpportunityId__c=\&#39;&quot;+project.Id+&quot;\&#39;&quot;).getArray(&quot;records&quot;);
+                isInstallerAdded = false;
+                for(var j=0; j&lt;= projectMembers.length-1; j++){
+                    if(projectMembers[j].ProjectRoles__c.search(&quot;Генподрядчик&quot;) != -1) {
+                        isInstallerAdded = true;
+                        account = sforce.connection.query(&quot;select ShippingRegion__c from Account where Id=\&#39;&quot;+projectMembers[j].AccountId__c+&quot;\&#39;&quot;).getArray(&quot;records&quot;)[0];
+                        project.ProjectRegion__c = account.ShippingRegion__c;
+                        break;
+                    }
+                }
+                if(!isInstallerAdded) throw &quot;Err4&quot;;
+            
+            }
+
+            if(project.StageName == &quot;Отгрузка оборудования&quot;) {
+                if(!project.ActualAmount__c) throw &quot;Err5&quot;;
+            }
+
+            project.StageName = projectStagesArray[i+1].MasterLabel;
+            break;
+        }
+    }
+    var isNextStageConfirmed = confirm(&quot;Следующий этап проекта: &quot;+project.StageName+&quot;. Вы уверены, что хотите перейти на следующий этап?&quot;);
+    if(isNextStageConfirmed){
+    
+        sforce.connection.update(new Array(project));
+        parent.location.href = url;
+    }
+} catch (err) {
+    if(err==&quot;Err1&quot;) {
+        alert(&quot;Прежде чем перейти к следующему этапу необходимо добавить Генпроектировщика к проекту&quot;);
+    } else if(err == &quot;Err2&quot;) {
+        alert(&quot;Прежде чем перейти к следующему этапу необходимо добавить продукты к проекту&quot;);
+    } else if(err == &quot;Err3&quot;) {
+        alert(&quot;Прежде чем перейти к следующему этапу необходимо добавить к проекту смету, на основе добавленных к проекту продуктов&quot;);
+    } else if(err == &quot;Err4&quot;) {
+        alert(&quot;Прежде чем перейти к следующему этапу необходимо добавить Генподрядчика к проекту&quot;);
+    } else if(err == &quot;Err5&quot;) {
+        alert(&quot;Прежде чем перейти к следующему этапу необходимо указать фактическую сумму прихода денег по проекту&quot;);
+    }
+}
+//alert(project.StageName);</url>
+</WebLink>

@@ -1,0 +1,13 @@
+<apex:page showHeader="true" standardController="OpportunityGroup__c" extensions="OpportunityGroupController" tabStyle="OpportunityGroup__c">        
+   <apex:form >        
+        <apex:dynamicComponent componentValue="{!dynamicForm}"/>
+    </apex:form>
+    <apex:form >        
+        <apex:dynamicComponent componentValue="{!SetOwnerForm}" rendered="{!isAdministration}"/>
+    </apex:form>
+    <apex:form >        
+        <apex:dynamicComponent componentValue="{!deleteForm}"/>
+    </apex:form>
+    
+    <apex:variable var="userDel" value="{!userDel}" />  
+</apex:page>

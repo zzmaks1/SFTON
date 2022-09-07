@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ViewMoscow_med</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ShippingCity__c</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>Activity__c</columns>
+    <columns>ShippingRegion__c</columns>
+    <columns>ACCOUNT.LAST_UPDATE</columns>
+    <columns>UserTION__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ShippingRegion__c</field>
+        <operation>equals</operation>
+        <value>Москва</value>
+    </filters>
+    <filters>
+        <field>UserTION__c</field>
+        <operation>equals</operation>
+        <value>Иван Медведков,Виктория Пяк,Илья Лысов,Кирина Воронкова</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.INDUSTRY</field>
+        <operation>equals</operation>
+        <value>Здравоохранение</value>
+    </filters>
+    <label>Мед.оборудование г.Москва</label>
+    <language>ru</language>
+</ListView>

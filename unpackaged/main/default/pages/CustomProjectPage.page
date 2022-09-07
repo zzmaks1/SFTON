@@ -1,0 +1,34 @@
+<apex:page showHeader="true" standardController="Opportunity" extensions="OpportunityExtentionController" tabStyle="Opportunity">        
+    
+    <apex:sectionHeader title="Редактирование проекта"  subtitle="Создать проект" />
+
+    <apex:form >        
+        <apex:dynamicComponent componentValue="{!dynamicForm}"/>
+    </apex:form>
+    <apex:variable var="opp_Name" value="{!Opportunity.Name}" />
+    <apex:variable var="opp_StageName" value="{!Opportunity.StageName}" />
+    <apex:variable var="opp_LeadSource" value="{!Opportunity.LeadSource}" />
+    <apex:variable var="opp_ProjectProperties__c" value="{!Opportunity.ProjectProperties__c}" />
+    <apex:variable var="opp_isBillPaid__c" value="{!Opportunity.IsBillPaid__c}" />
+    <apex:variable var="opp_Description" value="{!Opportunity.Description}" />
+    <apex:variable var="opp_Type" value="{!Opportunity.Type}" />
+    <apex:variable var="opp_ProjectRegion__c" value="{!Opportunity.ProjectRegion__c}" />
+    <apex:variable var="opp_OpportunityLink__c" value="{!Opportunity.OpportunityLink__c}" />
+    <apex:variable var="opp_isProblematicProject__c" value="{!Opportunity.isProblematicProject__c}" />
+    <apex:variable var="opp_AuctionLinkDesign__c" value="{!Opportunity.AuctionLinkDesign__c}" />
+    <apex:variable var="opp_AuctionLinkMounting__c" value="{!Opportunity.AuctionLinkMounting__c}" />
+    <apex:variable var="opp_DesignAuctionNumber__c" value="{!Opportunity.DesignAuctionNumber__c}" />
+    <apex:variable var="opp_MountingAuctionNumber__c" value="{!Opportunity.MountingAuctionNumber__c}" />
+    <apex:variable var="opp_AuctionNameDesign__c" value="{!Opportunity.AuctionNameDesign__c}" />
+    <apex:variable var="opp_AuctionNameMounting__c" value="{!Opportunity.AuctionNameMounting__c}" />
+    <apex:variable var="opp_AuctionDateDesign__c" value="{!Opportunity.AuctionDateDesign__c}" />
+    <apex:variable var="opp_AuctionDateMounting__c" value="{!Opportunity.AuctionDateMounting__c}" />
+    <apex:variable var="opp_ActualAmount__c" value="{!Opportunity.ActualAmount__c}" />
+    <apex:variable var="opp_CloseDate" value="{!Opportunity.CloseDate}" />
+    <apex:variable var="opp_RecordTypeId" value="{!Opportunity.RecordTypeId}" />
+    <apex:variable var="opp_stageName" value="{!Opportunity.stageName}" />
+    <apex:variable var="opp_ownerId" value="{!Opportunity.ownerId}" />
+    <apex:variable var="opp_UserTION" value="{!Opportunity.UserTION__c}" />
+    <apex:variable var="opp_StartWorkingProducts" value="{!Opportunity.StartWorkingProducts__c}" />
+    <apex:variable var="opp_HiddenStageNameBeforeApprovalStarts" value="{!Opportunity.HiddenStageNameBeforeApprovalStarts__c}" />
+</apex:page>

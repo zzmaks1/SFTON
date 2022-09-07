@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Activity__c</fullName>
+    <externalId>false</externalId>
+    <label>Статус организации</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Не было контакта</fullName>
+                <color>#FF6666</color>
+                <default>true</default>
+                <label>Не было контакта</label>
+            </value>
+            <value>
+                <fullName>Первый контакт</fullName>
+                <default>false</default>
+                <label>Первый контакт</label>
+            </value>
+            <value>
+                <fullName>Первая сделка</fullName>
+                <default>false</default>
+                <label>Первая сделка</label>
+            </value>
+            <value>
+                <fullName>Постоянный клиент</fullName>
+                <color>#FFCC33</color>
+                <default>false</default>
+                <label>Постоянный клиент</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

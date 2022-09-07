@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LeadCompanyType__c</fullName>
+    <externalId>false</externalId>
+    <label>Тип компании</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Монтажник</fullName>
+                <default>false</default>
+                <label>Монтажник</label>
+            </value>
+            <value>
+                <fullName>Проектировщик</fullName>
+                <default>false</default>
+                <label>Проектировщик</label>
+            </value>
+            <value>
+                <fullName>Проектно-монтажная организация</fullName>
+                <default>false</default>
+                <label>Проектно-монтажная организация</label>
+            </value>
+            <value>
+                <fullName>ЛПУ</fullName>
+                <default>false</default>
+                <label>ЛПУ</label>
+            </value>
+            <value>
+                <fullName>Служба эксплуатации</fullName>
+                <default>false</default>
+                <label>Служба эксплуатации</label>
+            </value>
+            <value>
+                <fullName>Заказчик</fullName>
+                <default>false</default>
+                <label>Заказчик</label>
+            </value>
+            <value>
+                <fullName>Инвестор</fullName>
+                <default>false</default>
+                <label>Инвестор</label>
+            </value>
+            <value>
+                <fullName>Поставщик</fullName>
+                <default>false</default>
+                <label>Поставщик</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

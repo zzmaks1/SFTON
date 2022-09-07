@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ManagerPosition__c</fullName>
+    <externalId>false</externalId>
+    <label>Должность руководителя Тион</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>ManagerName__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Генеральный директор</fullName>
+                <default>false</default>
+                <label>Генеральный директор</label>
+            </value>
+            <value>
+                <fullName>Исполнительный директор</fullName>
+                <default>false</default>
+                <label>Исполнительный директор</label>
+            </value>
+            <value>
+                <fullName>Заместитель директора</fullName>
+                <default>false</default>
+                <label>Заместитель директора</label>
+            </value>
+            <value>
+                <fullName>Директор по развитию</fullName>
+                <default>false</default>
+                <label>Директор по развитию</label>
+            </value>
+            <value>
+                <fullName>Руководитель сервисной службы</fullName>
+                <default>false</default>
+                <label>Руководитель сервисной службы</label>
+            </value>
+            <value>
+                <fullName>Руководитель направления</fullName>
+                <default>false</default>
+                <label>Руководитель направления</label>
+            </value>
+            <value>
+                <fullName>Коммерческий директор</fullName>
+                <default>false</default>
+                <label>Коммерческий директор</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>В.Ю. Павлов</controllingFieldValue>
+            <controllingFieldValue>М.А. Амелькин</controllingFieldValue>
+            <valueName>Генеральный директор</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>М.Ю. Данилов</controllingFieldValue>
+            <valueName>Руководитель сервисной службы</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Е.А. Гребенюк</controllingFieldValue>
+            <valueName>Руководитель направления</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>О.В. Колмакова</controllingFieldValue>
+            <valueName>Коммерческий директор</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

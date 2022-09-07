@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Корпоративный пользователь</fullName>
+        <default>false</default>
+        <label>Корпоративный пользователь</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Сотрудник, принимающий решения</fullName>
+        <default>false</default>
+        <label>Сотрудник, принимающий решения</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Экономный покупатель</fullName>
+        <default>false</default>
+        <label>Экономный покупатель</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Экономный сотрудник, принимающий решения</fullName>
+        <default>false</default>
+        <label>Экономный сотрудник, принимающий решения</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Эксперт по оценке</fullName>
+        <default>false</default>
+        <label>Эксперт по оценке</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Руководитель проекта</fullName>
+        <default>false</default>
+        <label>Руководитель проекта</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Сотрудник, влияющий на принятие решений</fullName>
+        <default>false</default>
+        <label>Сотрудник, влияющий на принятие решений</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Специалист по закупке оборудования</fullName>
+        <default>false</default>
+        <label>Специалист по закупке оборудования</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Другое</fullName>
+        <default>false</default>
+        <label>Другое</label>
+    </standardValue>
+</StandardValueSet>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>UserRole__c</fullName>
+    <externalId>false</externalId>
+    <label>Роль</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Менеджер по продажам</fullName>
+                <default>false</default>
+                <label>Менеджер по продажам</label>
+            </value>
+            <value>
+                <fullName>Региональный менеджер по продажам</fullName>
+                <default>false</default>
+                <label>Региональный менеджер по продажам</label>
+            </value>
+            <value>
+                <fullName>Руководитель отдела продаж</fullName>
+                <default>false</default>
+                <label>Руководитель отдела продаж</label>
+            </value>
+            <value>
+                <fullName>Руководитель сервисной службы</fullName>
+                <default>false</default>
+                <label>Руководитель сервисной службы</label>
+            </value>
+            <value>
+                <fullName>Сервисный инженер</fullName>
+                <default>false</default>
+                <label>Сервисный инженер</label>
+            </value>
+            <value>
+                <fullName>Проектировщик</fullName>
+                <default>false</default>
+                <label>Проектировщик</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

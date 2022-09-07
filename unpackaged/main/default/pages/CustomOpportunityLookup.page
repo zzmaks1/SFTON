@@ -1,0 +1,64 @@
+<apex:page controller="CustomOpportunityLookupController"
+  title="Search" 
+  showHeader="false" 
+  sideBar="false" 
+  tabStyle="Opportunity" 
+  id="pg">
+ 
+  <apex:form >
+  <apex:outputPanel id="page_opp" layout="block" style="margin:5px;padding:10px;padding-top:2px;">
+    <apex:tabPanel switchType="Ajax" selectedTab="name1" id="tabbedPanel" immediate="true">
+ 
+      <!-- SEARCH TAB -->
+      <apex:tab label="Поиск" name="tab1" id="tabOne">
+ 
+        <apex:actionRegion >  
+          <apex:outputPanel id="top" layout="block" style="margin:5px;padding:10px;padding-top:2px;">
+            <apex:outputLabel value="Поиск" style="font-weight:Bold;padding-right:10px;" for="txtSearch"/>
+            <apex:inputText id="txtSearch" value="{!searchString}" />
+              <span style="padding-left:5px"><apex:commandButton id="btnGo" value="Начать" action="{!Search}" rerender="searchResults"></apex:commandButton></span>
+          </apex:outputPanel>
+ 
+          <apex:outputPanel id="pnlSearchResults" style="margin:10px;height:350px;overflow-Y:auto;" layout="block">
+            <apex:pageBlock id="searchResults"> 
+              <apex:pageBlockTable value="{!results}" var="opp" id="tblResults">
+                <apex:column >
+                  <apex:facet name="header">
+                    <apex:outputPanel >Наименование объекта</apex:outputPanel>
+                  </apex:facet>
+                  <apex:outputLink value="javascript:top.window.opener.lookupPick2('{!FormTag}','{!TextBox}_lkid','{!TextBox}','{!opp.Id}','{!SUBSTITUTE(URLENCODE(opp.Name),'+','%20')}',false)" rendered="{!NOT(ISNULL(opp.Id))}">{!opp.Name}</apex:outputLink>
+                </apex:column>
+                <apex:column >
+                  <apex:facet name="header">
+                    <apex:outputPanel >Этап</apex:outputPanel>
+                  </apex:facet>
+                  {!opp.StageName}   
+                </apex:column>
+              </apex:pageBlockTable>
+            </apex:pageBlock>
+          </apex:outputPanel>
+        </apex:actionRegion>
+ 
+      </apex:tab>
+ 
+      <!-- NEW ACCOUNT TAB -->
+      <apex:tab label="Создать проект" name="tab2" id="tabTwo">
+ 
+        <apex:pageBlock id="newAccount" title="Новый проект" mode="edit">
+ 
+          <apex:pageBlockButtons >
+            <apex:commandButton action="{!saveOpportunity}" value="Сохранить" />
+          </apex:pageBlockButtons>
+ 
+          <apex:pageBlockSection columns="2">
+            <apex:repeat value="{!$ObjectType.Opportunity.FieldSets.CustomOpportunityLookupFields}" var="field">
+              <apex:inputField value="{!opp[field]}" required="{!field.required}"/>
+            </apex:repeat>
+          </apex:pageBlockSection> 
+        </apex:pageBlock>
+ 
+      </apex:tab>
+    </apex:tabPanel>
+  </apex:outputPanel>
+  </apex:form>
+</apex:page>

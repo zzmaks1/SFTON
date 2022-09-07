@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TaxAmount10__c</fullName>
+    <externalId>false</externalId>
+    <formula>TotalEquip__c * 10/110</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Сумма за оборудование(только Ламинары) с НДС 10%</inlineHelpText>
+    <label>в т.ч. НДС(10%)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <type>Currency</type>
+</CustomField>

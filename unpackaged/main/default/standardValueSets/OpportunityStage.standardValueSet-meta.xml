@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Отслеживание конкурса на проектирование</fullName>
+        <default>false</default>
+        <label>Отслеживание конкурса на проектирование</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>5</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Переговоры с проектировщиком</fullName>
+        <default>false</default>
+        <label>Переговоры с проектировщиком</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>10</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Подбор оборудования</fullName>
+        <default>false</default>
+        <label>Подбор оборудования</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>20</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>КП Проектировщику</fullName>
+        <default>false</default>
+        <label>КП Проектировщику</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>25</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Получение копии проекта с оборудованием</fullName>
+        <default>false</default>
+        <label>Получение копии проекта с оборудованием</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>35</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Государственная экспертиза проекта</fullName>
+        <default>false</default>
+        <label>Государственная экспертиза проекта</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>40</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Отслеживание конкурса на монтаж</fullName>
+        <default>false</default>
+        <label>Отслеживание конкурса на монтаж</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>40</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Конкурс на монтаж завершен</fullName>
+        <default>false</default>
+        <label>Конкурс на монтаж завершен</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>45</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Переговоры с генподрядчиком</fullName>
+        <default>false</default>
+        <label>Переговоры с генподрядчиком</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>50</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>КП генподрядчику</fullName>
+        <default>false</default>
+        <label>КП генподрядчику</label>
+        <closed>false</closed>
+        <forecastCategory>BestCase</forecastCategory>
+        <probability>60</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Заключение договора с генподрядчиком</fullName>
+        <default>false</default>
+        <label>Заключение договора с генподрядчиком</label>
+        <closed>false</closed>
+        <forecastCategory>Forecast</forecastCategory>
+        <probability>80</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Заказ на производство оборудования</fullName>
+        <default>false</default>
+        <label>Заказ на производство оборудования</label>
+        <closed>false</closed>
+        <forecastCategory>Forecast</forecastCategory>
+        <probability>85</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Отгрузка оборудования</fullName>
+        <default>false</default>
+        <label>Отгрузка оборудования</label>
+        <closed>false</closed>
+        <forecastCategory>Forecast</forecastCategory>
+        <probability>90</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Шеф-монтаж</fullName>
+        <default>false</default>
+        <label>Шеф-монтаж</label>
+        <closed>false</closed>
+        <forecastCategory>Forecast</forecastCategory>
+        <probability>95</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Гарантийная эксплуатация</fullName>
+        <default>false</default>
+        <label>Гарантийная эксплуатация</label>
+        <closed>false</closed>
+        <forecastCategory>Forecast</forecastCategory>
+        <probability>96</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Постгарантийная эксплуатация</fullName>
+        <default>false</default>
+        <label>Постгарантийная эксплуатация</label>
+        <closed>false</closed>
+        <forecastCategory>Forecast</forecastCategory>
+        <probability>97</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Закрыто и реализовано</fullName>
+        <default>false</default>
+        <label>Закрыто и реализовано</label>
+        <closed>true</closed>
+        <forecastCategory>Closed</forecastCategory>
+        <probability>100</probability>
+        <won>true</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Закрыто и не реализовано</fullName>
+        <default>false</default>
+        <label>Закрыто и не реализовано</label>
+        <closed>true</closed>
+        <forecastCategory>Omitted</forecastCategory>
+        <probability>0</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Закрыто как не профиль</fullName>
+        <default>false</default>
+        <label>Закрыто как не профиль</label>
+        <closed>true</closed>
+        <forecastCategory>Omitted</forecastCategory>
+        <probability>0</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Закрыто как провал</fullName>
+        <default>false</default>
+        <label>Закрыто как провал</label>
+        <closed>true</closed>
+        <forecastCategory>Omitted</forecastCategory>
+        <probability>0</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Холодный звонок</fullName>
+        <default>false</default>
+        <label>Холодный звонок</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>33</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Переговоры (обсуждение условий)</fullName>
+        <default>false</default>
+        <label>Переговоры (обсуждение условий)</label>
+        <closed>false</closed>
+        <forecastCategory>BestCase</forecastCategory>
+        <probability>66</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Закупка оборудования</fullName>
+        <default>false</default>
+        <label>Закупка оборудования</label>
+        <closed>false</closed>
+        <forecastCategory>Forecast</forecastCategory>
+        <probability>100</probability>
+        <won>false</won>
+    </standardValue>
+</StandardValueSet>

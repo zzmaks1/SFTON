@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Активация заказа</fullName>
+        <default>true</default>
+        <label>Активация заказа</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Утверждение заказа</fullName>
+        <default>false</default>
+        <label>Утверждение заказа</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Выполнение</fullName>
+        <default>false</default>
+        <label>Выполнение</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Платеж</fullName>
+        <default>false</default>
+        <label>Платеж</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Выставление счета</fullName>
+        <default>false</default>
+        <label>Выставление счета</label>
+    </standardValue>
+</StandardValueSet>

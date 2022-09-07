@@ -1,0 +1,1 @@
+Здравствуйте, {!Contact.FirstName}.	{!Case.Solution_Description}	Благодарим Вас, 	{!User.Name}  {!Organization.Name}	Ваш комментарий:    {!Case.Description}   {!Case.Solution_Attachments}

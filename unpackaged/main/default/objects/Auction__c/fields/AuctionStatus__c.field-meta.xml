@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AuctionStatus__c</fullName>
+    <externalId>false</externalId>
+    <label>Статус</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Не просмотрен</fullName>
+                <default>true</default>
+                <label>Не просмотрен</label>
+            </value>
+            <value>
+                <fullName>Не профиль</fullName>
+                <default>false</default>
+                <label>Не профиль</label>
+            </value>
+            <value>
+                <fullName>Конвертирован в проект</fullName>
+                <default>false</default>
+                <label>Конвертирован в проект</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

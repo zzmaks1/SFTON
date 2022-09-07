@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Title</fullName>
+    <inlineHelpText>Заголовок для меры доверия, который отображается гостям. Помните, что заголовок должен быть кратким и нейтральным. Несмотря на возможность использования 40 символов, рекомендуем использовать не более 20.</inlineHelpText>
+</CustomField>

@@ -1,0 +1,51 @@
+<apex:page showHeader="false" sidebar="false" controller="DailyReportSender">
+    <head>
+        <script src="https://code.jquery.com/jquery-1.10.1.min.js" type="text/javascript"></script>
+         <script>
+         $j = jQuery.noConflict();
+         $j(document).ready(function(){
+            $j('[value = "Пожалуйста, подождите..."]').hide();
+         });
+         function autoClick(){
+             $j('[value = "Пожалуйста, подождите..."]').show();
+             $j('[value = "Пожалуйста, подождите..."]')[0].click();
+             $j('[value = "Пожалуйста, подождите..."]').hide();
+         }
+         </script>
+    </head>
+    <apex:outputPanel id="page" layout="block" style="margin:10px;height:200px;overflow-Y:auto;" >
+        <apex:form >
+            <apex:pageBlock id="reportForm" title="Отчет за день" > 
+                
+                    
+                            <apex:pageMessages />                
+                            <apex:pageBlockButtons >
+                                <apex:commandButton action="{!sendReport}" value="Отправить отчет!" rendered="{!sendWindow}"/>
+                                <apex:commandButton action="{!processCommand}" value="Пожалуйста, подождите..."  rendered="{!NOT(sendWindow)}"/>
+                            </apex:pageBlockButtons>
+            
+                            <apex:pageBlockSection columns="1" rendered="{!sendWindow}">
+                                <apex:selectList size="1" label="От:" value="{!selectedUserId}" multiselect="false">
+                                    <apex:selectOptions value="{!tionUsers}" />       
+                                </apex:selectList>
+                            </apex:pageBlockSection> 
+                            <apex:pageBlockSection columns="1" rendered="{!NOT(sendWindow) && NOT(finished)}">
+                                <script>                                
+                                $j('[value = "Пожалуйста, подождите..."]').hide();
+                                setTimeout(autoClick, 2000);
+                                </script>
+                            </apex:pageBlockSection> 
+                            <apex:outputText value="Подготовка задач ({!StringCounts})" rendered="{!type_subject == 0}"/>
+                            <apex:outputText value="Подготовка событий ({!StringCounts})" rendered="{!type_subject == 1}"/>
+                            <apex:outputText value="Подготовка активов..." rendered="{!type_subject == 2}"/>
+                            <apex:outputText value="Отправка отчета..." rendered="{!type_subject == 3}"/>
+                            <apex:actionSupport event="onchange"                            
+                                            rerender="page" status="counterStatus"/>
+                                
+
+            </apex:pageBlock>
+            
+           </apex:form>
+        </apex:outputPanel>
+    
+</apex:page>

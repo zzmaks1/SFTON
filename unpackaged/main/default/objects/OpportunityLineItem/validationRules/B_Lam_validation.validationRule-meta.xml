@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>B_Lam_validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISPICKVAL(Product2.Family,&#39;В Lam&#39;) &amp;&amp; (NOT(ISPICKVAL(FilterSectionComposition__c,&#39;&#39;)) || NOT(ISPICKVAL(OutdoorVersion__c,&#39;&#39;)) || NOT(ISPICKVAL(ServiceSide__c,&#39;&#39;)))</errorConditionFormula>
+    <errorMessage>Поля &quot;Компоновка секций&quot;, &quot;Наружное исполнение&quot;, &quot;Сторона&quot; недопустимы при выборе данного продукта</errorMessage>
+</ValidationRule>

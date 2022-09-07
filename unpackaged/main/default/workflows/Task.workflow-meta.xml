@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>HiddenTaskTypeUpdate</fullName>
+        <field>HiddenActivityType__c</field>
+        <formula>IF( TEXT(Type) =&#39;Личная встреча&#39;, &#39;Встреча&#39;,  IF( TEXT(Type)  =&#39;Прочее&#39;, &#39;Прочее&#39;,  IF( TEXT(Type)  =&#39;Телефонный звонок входящий&#39;, &#39;Тел.звонок входящий&#39;, IF( TEXT(Type)  =&#39;Телефонный звонок исходящий&#39;, &#39;Тел.звонок исходящий&#39;, &#39;Эл. письмо&#39;) ) ) )</formula>
+        <name>Обновление скрытого типа задачи</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Скрытая типизация задачи</fullName>
+        <actions>
+            <name>HiddenTaskTypeUpdate</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Task.Type</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

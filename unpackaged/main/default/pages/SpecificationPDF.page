@@ -1,0 +1,262 @@
+<apex:page standardController="Specification__c" extensions="SpecificationExtensionController" showHeader="false" sidebar="false" standardStylesheets="false" renderAs="pdf" contentType="utf-8">
+    <head>     
+        <style>
+            body { 
+                font: normal 14px "Arial Unicode MS";
+                text-align: justify;
+                margin: 0px 30px 0px 60px;
+            }
+            p {
+                text-indent: 30px;
+                margin:0px;
+            }
+            .header {
+                text-align: center;
+                padding-top: 20px;
+            }
+            .header_duplicate {
+                position: relative;
+                top: -20px;
+                left: 1px;
+                text-align: center;
+            }
+            .bold_simulate {
+                position: absolute;
+            }
+            .billing_info {
+                width: 100%;
+                text-align: left;
+                padding: 0px;
+                margin: 0px;
+                border-collapse:collapse;
+            }
+            .billing_info tr, .billing_info td {
+                padding: 0px;
+                margin: 0px;
+            }
+            .billing_info td {
+                width: 50%;
+                vertical-align: top;
+            }           
+            @page {
+                @bottom-center {
+                    font: normal 14px "Arial Unicode MS";
+                    color: #777777;
+                    content: "Поставщик _____________________&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Покупатель _____________________";
+                }
+            }
+            .specification {
+                page-break-before: always;
+                width: 40%;
+                position: relative;
+                left: 350px;
+                font-size: 12px;
+                text-align: left;
+            }
+            .specificationTable {
+                border-collapse:collapse;
+                width: 100%;
+                text-align: center;
+            }
+            .specificationTable th, .specificationTable td{
+                border: 0.5px solid black;
+                padding: 3px;
+            }
+        </style> 
+    </head>
+    <body>        
+        <div class="specification">
+            <apex:outputText value="{!Specification__c.SpecificationDate__c}" rendered="false"/>
+            Приложение № {!Specification__c.SpecificationNumber__c} от {!ContractSpecificationDate}<br/>
+            к договору поставки Оборудования<br/> 
+            № {!Contract.ContractNumber__c} от {!ContractDate}
+        </div>
+        
+        <div class="header">СПЕЦИФИКАЦИЯ №{!Specification__c.SpecificationNumber__c}</div>
+        <div class="header_duplicate">СПЕЦИФИКАЦИЯ №{!Specification__c.SpecificationNumber__c}</div>
+        
+        <div style="text-align: center">
+            к договору поставки Оборудования № {!Contract.ContractNumber__c} от {!ContractDate}
+        </div>
+        
+        <div>            
+            <p style="padding-top: 30px">
+                1. Поставщик обязуется поставить, а Покупатель оплатить и принять следующее Оборудование:
+            </p>
+            
+            
+            <apex:variable var="rowNum" value="{!1}"/> 
+            <table class="specificationTable">    
+                    <tr>
+                        <td rowspan="2">
+                            <apex:outputPanel >№</apex:outputPanel>
+                        </td>
+                        <td rowspan="2" width="200" style="text-align:left">
+                            <apex:outputPanel >Наименование оборудования</apex:outputPanel>
+                        </td>
+                        <td rowspan="2" width="50">
+                            <apex:outputPanel >Коли- чество</apex:outputPanel>
+                        </td>
+                        <td rowspan="2"  width="90">
+                            <apex:outputPanel >Цена за ед., руб.коп.</apex:outputPanel>
+                        </td>
+                        <td rowspan="2"  width="90">
+                            <apex:outputPanel >Сумма без учёта НДС, руб.коп.</apex:outputPanel>
+                        </td>
+                        <td colspan="2">
+                            <apex:outputPanel >НДС</apex:outputPanel>
+                        </td>
+                        <td rowspan="2"  width="90">
+                            <apex:outputPanel >Сумма с учётом НДС, руб.коп.</apex:outputPanel>
+                        </td>
+                    </tr>   
+                    <tr>
+                        <td>
+                            <apex:outputPanel >ставка, %</apex:outputPanel>
+                        </td>
+                        <td>
+                            <apex:outputPanel >сумма, руб.коп.</apex:outputPanel>
+                        </td>
+                    </tr>                 
+                    <apex:repeat value="{!ContractProducts}" var="product">             
+                    <tr>                        
+                        <td>
+                            <apex:outputText value="{!FLOOR(rowNum)}"/>
+                        </td>
+                        <td style="text-align:left">
+                            <apex:outputText value="{!product.name}"/>
+                        </td>
+                        <td>
+                            <apex:outputText value="{!ROUND(product.quantity,0)}"/>
+                        </td>
+                        <td>
+                            <apex:outputText value="{!product.unitpriceWithoutNDS}"/>
+                        </td>
+                        <td>
+                            <apex:outputText value="{!product.subtotalWithoutNDS}"/>
+                        </td>
+                        <td>
+                            <apex:outputText value="{!product.unitNDSString}"/>
+                        </td>
+                        <td>
+                            <apex:outputText value="{! IF(product.subtotalNDS > 0, product.subtotalNDS, '-')}"/>
+                        </td>
+                        <td>
+                            <apex:outputText value="{!product.subtotal}"/>
+                        </td>
+                                                
+                    </tr>
+                    <apex:variable var="rowNum" value="{!rowNum + 1}"/>
+                    </apex:repeat>
+                    <tr>
+                        <td>
+                            <apex:outputPanel ></apex:outputPanel>
+                        </td>
+                        <td>
+                            <apex:outputPanel layout="block" style="text-align:left">Итого:</apex:outputPanel>
+                        </td>
+                        <td>
+                            <apex:outputPanel >{!ROUND(ContractCount, 0)}</apex:outputPanel>
+                        </td>
+                        <td>
+                            <apex:outputPanel >X</apex:outputPanel>
+                        </td>
+                        <td>
+                            <apex:outputPanel >{!ContractTotalWithoutNDS}</apex:outputPanel>
+                        </td>
+                        <td>
+                            <apex:outputPanel >X</apex:outputPanel>
+                        </td>
+                        <td>
+                            <apex:outputPanel >{! IF(ContractNDS != '0.00', ContractNDS, 'X')}</apex:outputPanel>
+                        </td>
+                        <td>
+                            <apex:outputPanel >{!ContractTotal}</apex:outputPanel>
+                        </td>
+                    </tr> 
+            </table>
+
+
+           <br />
+            <p>
+                Итого:{!ContractTotalStr}, {! IF(Specification__c.SpecificationType__c == 'Экспорт','в том числе НДС 0%',IF(ContractNDS != '0.00', 'в том числе НДС '+ContractNDSStr, 'без НДС'))}.
+            </p>
+            <p>
+                {! IF(Specification__c.SpecificationType__c == 'Экспорт' || Specification__c.SpecificationType__c == 'Медоборудование','            
+                    Обеззараживатели-очистители воздуха серии «Тион» являются медицинским
+                    оборудованием,  что подтверждено Регистрационным удостоверением на 
+                    медицинское изделие №ФСР 2010/07645 от 16 августа 2013г., 
+                    выданного Федеральной службой по надзору в сфере здравоохранения (РОСЗДРАВНАДЗОР). Реализация
+                    обеззараживателей-очистителей воздуха серии «Тион» не подлежит обложению налогом на
+                    добавленную стоимость в соответствии с п.2 ст.149 НК РФ.               
+                ', '')} 
+            </p><br />
+            <p>
+                2. Условия и порядок поставки Оборудования указанного в настоящей Спецификации:    
+            </p>
+            <p>
+                {!PaymentText}
+            </p>
+            <p>
+                <apex:outputText value="{!PaymentText2}" escape="false" style="text-indent:30px"/>               
+            </p>
+            <p>    
+                {!IF(Delivery != '','2.'+Delivery,'')}  
+            </p>            
+            <p>    
+                <apex:variable var="specConditionPointNumberVF" value="{!specConditionPointNumber}"/>
+                2.{!FLOOR(specConditionPointNumberVF)}. Срок поставки Оборудования: 
+                {!IF(Specification__c.DeliveryTime__c == 'до','до ' + Contract.DeliveryDuration__c, 'в течение '+Specification__c.DeliveryDuration__c + ' ' + 
+                Specification__c.DeliveryTime__c + ' с даты получения предоплаты.')}                
+                <apex:variable var="specConditionPointNumberVF" value="{!specConditionPointNumberVF + 1}"/>
+            </p>
+            <p>    
+                 {!DelayIf}            
+                
+            </p>
+            <p>   
+                <apex:variable var="specConditionPointNumberVF" value="{!specConditionPointNumberNext}"/> 
+                2.{!FLOOR(specConditionPointNumberVF)}. {!addressPost}.
+                <apex:variable var="specConditionPointNumberVF" value="{!specConditionPointNumberVF + 1}"/>
+            </p>
+            <p>    
+               2.{!FLOOR(specConditionPointNumberVF)}. По всем остальным условиям, неоговоренным сторонами в настоящем 
+                Приложении №{!Specification__c.SpecificationNumber__c}, стороны руководствуются условиями договора № 
+                {!Contract.ContractNumber__c} от {!ContractDate}
+                <apex:variable var="specConditionPointNumberVF" value="{!specConditionPointNumberVF + 1}"/>
+            </p>
+            <p>    
+                2.{!FLOOR(specConditionPointNumberVF)}. Настоящее Приложение №{!Specification__c.SpecificationNumber__c} составлено в 
+                двух экземплярах, по одному для каждой из Сторон, является неотъемлемой частью договора № {!Contract.ContractNumber__c} 
+                от {!ContractDate} и должно к нему прилагаться.
+                <apex:variable var="specConditionPointNumberVF" value="{!specConditionPointNumberVF + 1}"/>
+            </p>
+        </div>
+        <div style="margin-top: 30px">
+            <table class="billing_info">
+                <tr>
+                    <td>От Поставщика:</td>
+                    <td>От Покупателя:</td>
+                </tr>
+                <tr>
+                    <td>ООО «Тион»</td>
+                    <td>{!Contract.ShortBillingContractorName__c}</td>
+                </tr>
+                
+                <tr>
+                    <td>Генеральный директор</td>
+                    <td>{!Contract.SignerPosition__c}</td>
+                </tr>
+                <tr>
+                    <td style="padding-top: 40px;">________________________ /{!Contract.TionPersonToSignContract__c}/</td>
+                    <td style="padding-top: 40px;">________________________ /{!Contract.SignatureInitials__c}/</td>
+                </tr>
+                <tr>
+                    <td>«___»____________________</td>
+                    <td>«___»____________________</td>
+                </tr>                
+            </table>
+        </div>
+
+  </body>
+</apex:page>

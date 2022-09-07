@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PreferredTimeEnd</fullName>
+    <inlineHelpText>Окончание предпочтительного промежутка времени для обращения к точке контакта.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+</CustomField>

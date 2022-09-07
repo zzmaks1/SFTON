@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Postpayment_days</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF( PostPayment__c &gt; 0 &amp;&amp;   NULLVALUE(Postpayment_days__c, 0) &lt; 1  ,true, false)</errorConditionFormula>
+    <errorDisplayField>Postpayment_days__c</errorDisplayField>
+    <errorMessage>Укажите срок</errorMessage>
+</ValidationRule>

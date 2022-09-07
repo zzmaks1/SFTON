@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TionOwner__c</fullName>
+    <externalId>false</externalId>
+    <label>Сотрудник, ответственный за действие</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Алексей Мирошин</fullName>
+                <default>false</default>
+                <label>Алексей Мирошин</label>
+            </value>
+            <value>
+                <fullName>Андрей Дюдюев</fullName>
+                <default>false</default>
+                <label>Андрей Дюдюев</label>
+            </value>
+            <value>
+                <fullName>Андрей Капкин</fullName>
+                <default>false</default>
+                <label>Андрей Капкин</label>
+            </value>
+            <value>
+                <fullName>Антон Чариков</fullName>
+                <default>false</default>
+                <label>Антон Чариков</label>
+            </value>
+            <value>
+                <fullName>Вадим Семенихин</fullName>
+                <default>false</default>
+                <label>Вадим Семенихин</label>
+            </value>
+            <value>
+                <fullName>Виктория Пяк</fullName>
+                <default>false</default>
+                <label>Виктория Пяк</label>
+            </value>
+            <value>
+                <fullName>Владимир Алексеев</fullName>
+                <default>false</default>
+                <label>Владимир Алексеев</label>
+            </value>
+            <value>
+                <fullName>Владимир Шматков</fullName>
+                <default>false</default>
+                <label>Владимир Шматков</label>
+            </value>
+            <value>
+                <fullName>Денис Вакал</fullName>
+                <default>false</default>
+                <label>Денис Вакал</label>
+            </value>
+            <value>
+                <fullName>Дмитрий Пронкин</fullName>
+                <default>false</default>
+                <label>Дмитрий Пронкин</label>
+            </value>
+            <value>
+                <fullName>Евгений Гребенюк</fullName>
+                <default>false</default>
+                <label>Евгений Гребенюк</label>
+            </value>
+            <value>
+                <fullName>Евгений Сафронов</fullName>
+                <default>false</default>
+                <label>Евгений Сафронов</label>
+            </value>
+            <value>
+                <fullName>Екатерина Горшенина</fullName>
+                <default>false</default>
+                <label>Екатерина Горшенина</label>
+            </value>
+            <value>
+                <fullName>Екатерина Широкова</fullName>
+                <default>false</default>
+                <label>Екатерина Широкова</label>
+            </value>
+            <value>
+                <fullName>Иван Кущенко</fullName>
+                <default>false</default>
+                <label>Иван Кущенко</label>
+            </value>
+            <value>
+                <fullName>Кирилл Бабич</fullName>
+                <default>false</default>
+                <label>Кирилл Бабич</label>
+            </value>
+            <value>
+                <fullName>Константин Парахин</fullName>
+                <default>false</default>
+                <label>Константин Парахин</label>
+            </value>
+            <value>
+                <fullName>Михаил Данилов</fullName>
+                <default>false</default>
+                <label>Михаил Данилов</label>
+            </value>
+            <value>
+                <fullName>Наталия Литвин</fullName>
+                <default>false</default>
+                <label>Наталия Литвин</label>
+            </value>
+            <value>
+                <fullName>Наталья Натфуллина</fullName>
+                <default>false</default>
+                <label>Наталья Натфуллина</label>
+            </value>
+            <value>
+                <fullName>Николай Бурячковский</fullName>
+                <default>false</default>
+                <label>Николай Бурячковский</label>
+            </value>
+            <value>
+                <fullName>Павел Гордеев</fullName>
+                <default>false</default>
+                <label>Павел Гордеев</label>
+            </value>
+            <value>
+                <fullName>Павел Погожев</fullName>
+                <default>false</default>
+                <label>Павел Погожев</label>
+            </value>
+            <value>
+                <fullName>Роман Борисов</fullName>
+                <default>false</default>
+                <label>Роман Борисов</label>
+            </value>
+            <value>
+                <fullName>Сергей Димитриев</fullName>
+                <default>false</default>
+                <label>Сергей Димитриев</label>
+            </value>
+            <value>
+                <fullName>Сергей Куйдин</fullName>
+                <default>false</default>
+                <label>Сергей Куйдин</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

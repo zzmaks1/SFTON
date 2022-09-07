@@ -1,0 +1,20 @@
+<apex:page showHeader="true" standardController="ProductionOrder__c" extensions="ProductionOrderExtentionController" tabStyle="Opportunity">        
+    
+    <apex:sectionHeader title="Редактирование производственного заказа"  subtitle="Создать производственный заказ" />
+
+    <apex:form >        
+        <apex:dynamicComponent componentValue="{!dynamicForm}"/>
+    </apex:form>
+    <apex:variable var="po_Name" value="{!ProductionOrder__c.Name}" />
+    <apex:variable var="po_opp" value="{!ProductionOrder__c.Opportunity__c}" />
+    <apex:variable var="po_Owner" value="{!ProductionOrder__c.Owner__c}" />
+    <apex:variable var="po_UserTION" value="{!ProductionOrder__c.UserTION__c}" />
+    <apex:variable var="po_SubmissionDate" value="{!ProductionOrder__c.SubmissionDate__c}" />
+    <apex:variable var="po_UID_1C" value="{!ProductionOrder__c.UID_1C__c}" />
+    <apex:variable var="po_Account" value="{!ProductionOrder__c.Account__c}" />
+    <apex:variable var="po_AccountContacts" value="{!ProductionOrder__c.AccountContacts__c}" />
+    <apex:variable var="po_Address" value="{!ProductionOrder__c.Address__c}" />
+    <apex:variable var="po_DeliveryPay" value="{!ProductionOrder__c.DeliveryPay__c}" />
+    <apex:variable var="po_EquipmentDate" value="{!ProductionOrder__c.EquipmentDate__c}" />
+    <apex:variable var="po_ShipmentDate" value="{!ProductionOrder__c.ShipmentDate__c}" />
+</apex:page>

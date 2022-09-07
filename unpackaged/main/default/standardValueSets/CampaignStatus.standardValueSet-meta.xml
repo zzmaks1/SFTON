@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Выполняется</fullName>
+        <default>false</default>
+        <label>Выполняется</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Завершено</fullName>
+        <default>false</default>
+        <label>Завершено</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Прервано</fullName>
+        <default>false</default>
+        <label>Прервано</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Запланировано</fullName>
+        <default>true</default>
+        <label>Запланировано</label>
+    </standardValue>
+</StandardValueSet>

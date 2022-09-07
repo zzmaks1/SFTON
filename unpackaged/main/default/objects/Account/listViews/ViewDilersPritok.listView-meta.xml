@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ViewDilersPritok</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>ShippingRegion__c</columns>
+    <columns>Activity__c</columns>
+    <columns>Field1__c</columns>
+    <columns>UserTION__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.TYPE</field>
+        <operation>equals</operation>
+        <value>Дилер</value>
+    </filters>
+    <filters>
+        <field>Field1__c</field>
+        <operation>notEqual</operation>
+        <value>Чистые помещения,HoReCa</value>
+    </filters>
+    <label>Дилеры Приток</label>
+    <language>ru</language>
+</ListView>

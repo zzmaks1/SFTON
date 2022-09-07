@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Договор</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Договоры</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Договор</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Договоры</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Договора</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Договоров</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Договору</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Договорам</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value>Договором</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value>Договорами</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Prepositional</caseType>
+        <plural>false</plural>
+        <value>Договоре</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Prepositional</caseType>
+        <plural>true</plural>
+        <value>Договорах</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Contract Layout</layout>
+        <sections>
+            <label><!-- Оплата --></label>
+            <section>Оплата</section>
+        </sections>
+        <sections>
+            <label><!-- Сведения о доставке --></label>
+            <section>Сведения о доставке</section>
+        </sections>
+        <sections>
+            <label><!-- Сведения о спецификации --></label>
+            <section>Сведения о спецификации</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Номер должен соответствовать формату: &apos;Первая буква - название нашего юрлица, затем вторая буква (без пробелов) - первая буква названия юрлица контрагента, затем, без пробелов, слеш и дата подписания договора&apos; --></errorMessage>
+        <name>Contract_format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Укажите срок --></errorMessage>
+        <name>Partpayment_days</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Укажите срок --></errorMessage>
+        <name>Postpayment_days</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Сумма процентов оплаты должна составлять 100% --></errorMessage>
+        <name>percent_summ</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Укажите срок --></errorMessage>
+        <name>prepayment_days</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- ContractToPDF --></label>
+        <name>ContractToPDF</name>
+    </webLinks>
+</CustomObjectTranslation>
